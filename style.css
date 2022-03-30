@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  margin: 3px;
+}
+.page{
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  grid-column-gap: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.card {
+  background-color: red;
+  height: 480px;
+  width: 323px;
+  border: 2px solid black;
+  border-radius: 4px;
+  
+}
+.profile1 {
+  text-align: center;
+  height: 85px;
+}
+.name{
+  font-size: 2rem;
+  font-family: 'Londrina Solid', cursive, sans-serif;
+  margin-bottom: 6px;
+}
+.profile2{
+  font-family: 'Londrina Solid', cursive, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 0.9rem;
+}
+.profile3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
