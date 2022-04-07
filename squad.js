@@ -21,7 +21,7 @@ export const squad = [
         position: 'Atacante',
         age: 31,
         overall: 84,
-        img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1643045816.png"
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694046.jpeg'
     },
     {
         name: 'Giorgian de Arrascaeta',
@@ -29,7 +29,7 @@ export const squad = [
         position: 'Meio-campo Ofensivo',
         age: 27,
         overall: 87,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1643045616.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698294.jpeg',
         
     },
     {
@@ -38,7 +38,7 @@ export const squad = [
         position: 'Meio-campo',
         age: 37,
         overall: 76,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1643045289.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698248.jpeg',
         
     },
     {
@@ -47,7 +47,7 @@ export const squad = [
         position: 'Meio-campo Ofensivo',
         age: 28,
         overall: 82,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1643045773.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694095.jpeg',
         
     },
     {
@@ -56,7 +56,7 @@ export const squad = [
         position: 'Meio-campo Ofensivo',
         age: 19,
         overall: 78,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1644073870.jpeg',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698359.jpeg',
         
     },
     {
@@ -65,7 +65,7 @@ export const squad = [
         position: 'Lateral Esquerdo',
         age: 36,
         overall: 84,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1643044525.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698436.jpeg',
         
     },
     {
@@ -74,7 +74,7 @@ export const squad = [
         position: 'Meio-campo',
         age: 26,
         overall: 82,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1643051825.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647697934.jpeg',
         
     },
     {
@@ -83,7 +83,7 @@ export const squad = [
         position: 'Zagueiro',
         age: 28,
         overall: 78,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1643051825.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693403.jpeg',
         
     },
     {
@@ -92,7 +92,7 @@ export const squad = [
         position: 'Lateral Direito',
         age: 30,
         overall: 78,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1643044149.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693574.jpeg',
         
     },
     {
@@ -101,7 +101,7 @@ export const squad = [
         position: 'Atacante',
         age: 24,
         overall: 85,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1643046107.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694277.jpeg',
         
     },
     {
@@ -110,7 +110,7 @@ export const squad = [
         position: 'Zagueiro',
         age: 34,
         overall: 86,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1643044088.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693177.jpeg',
         
     },
     {
@@ -119,7 +119,7 @@ export const squad = [
         position: 'Zagueiro',
         age: 28,
         overall: 82,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1643043802.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693227.jpeg',
         
     },
     {
@@ -128,7 +128,7 @@ export const squad = [
         position: 'Atacante',
         age: 31,
         overall: 80,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1644073984.jpeg',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694222.jpeg',
         
     },
     {
@@ -137,7 +137,7 @@ export const squad = [
         position: 'Lateral Direito',
         age: 21,
         overall: 77,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1643044194.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693640.jpeg',
         
     },
     {
@@ -146,7 +146,7 @@ export const squad = [
         position: 'Meio-campo',
         age: 21,
         overall: 82,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1643045144.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647698164.jpeg',
         
     },
     {
@@ -155,7 +155,7 @@ export const squad = [
         position: 'Lateral Esquerdo',
         age: 20,
         overall: 77,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1643044697.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698499.jpeg',
         
     },
     {
@@ -164,7 +164,7 @@ export const squad = [
         position: 'Zagueiro',
         age: 26,
         overall: 77,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1643044020.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693375.jpeg',
         
     },
     {
@@ -173,7 +173,7 @@ export const squad = [
         position: 'Lateral Direito',
         age: 33,
         overall: 75,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1643044404.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693605.jpeg',
         
     },
     {
@@ -191,7 +191,7 @@ export const squad = [
         position: 'Meio-Campo',
         age: 29,
         overall: 80,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1643044813.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647697965.jpeg',
         
     },
     {
@@ -200,7 +200,7 @@ export const squad = [
         position: 'Lateral Esquerdo',
         age: 29,
         overall: 73,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1643044460.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698410.jpeg',
         
     },
     {
@@ -209,7 +209,7 @@ export const squad = [
         position: 'Meio-campo Ofensivo',
         age: 32,
         overall: 83,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1643045241.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698217.jpeg',
         
     },
     {
@@ -218,7 +218,7 @@ export const squad = [
         position: 'Meio-campo Defensivo',
         age: 24,
         overall: 80,
-        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1643045184.png',
+        img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647698128.jpeg',
         
     },
     {

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+
 
 *,::before,::after{
   margin: 0;
@@ -11,7 +11,7 @@ body{
   min-height: 100vh;
   margin: 3px;
 }
-.page{
+.wrapper{
   display: grid;
   grid-template-columns:  repeat(4, 1fr);
   grid-column-gap: 1px;
@@ -19,8 +19,6 @@ body{
 }
 .card {
   background-color: red;
-  height: 480px;
-  width: 323px;
   border: 2px solid black;
   border-radius: 4px;
   
@@ -46,4 +44,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.photo{
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-radius: 1px;
+  background-color: white;
 }
