@@ -24,9 +24,9 @@ export const squad = [
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694046.jpeg'
     },
     {
-        name: 'Giorgian de Arrascaeta',
+        name: 'de Arrascaeta',
         number: 14,
-        position: 'Meio-campo Ofensivo',
+        position: 'Meio Ofensivo',
         age: 27,
         overall: 87,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698294.jpeg',
@@ -44,7 +44,7 @@ export const squad = [
     {
         name: 'Vitinho',
         number: 11,
-        position: 'Meio-campo Ofensivo',
+        position: 'Meio Ofensivo',
         age: 28,
         overall: 82,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694095.jpeg',
@@ -53,7 +53,7 @@ export const squad = [
     {
         name: 'Lázaro',
         number: 13,
-        position: 'Meio-campo Ofensivo',
+        position: 'Meio Ofensivo',
         age: 19,
         overall: 78,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698359.jpeg',
@@ -62,7 +62,7 @@ export const squad = [
     {
         name: 'Felipe Luis',
         number: 16,
-        position: 'Lateral Esquerdo',
+        position: 'Lateral Esq',
         age: 36,
         overall: 84,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698436.jpeg',
@@ -71,7 +71,7 @@ export const squad = [
     {
         name: 'Andreas Pereira',
         number: 18,
-        position: 'Meio-campo',
+        position: 'Meio',
         age: 26,
         overall: 82,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647697934.jpeg',
@@ -89,7 +89,7 @@ export const squad = [
     {
         name: 'Rodinei',
         number: 20,
-        position: 'Lateral Direito',
+        position: 'Lateral Dir',
         age: 30,
         overall: 78,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693574.jpeg',
@@ -134,7 +134,7 @@ export const squad = [
     {
         name: 'Matheuzinho',
         number: 34,
-        position: 'Lateral Direito',
+        position: 'Lateral Dir',
         age: 21,
         overall: 77,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693640.jpeg',
@@ -143,7 +143,7 @@ export const squad = [
     {
         name: 'João Gomes',
         number: 35,
-        position: 'Meio-campo',
+        position: 'Meio',
         age: 21,
         overall: 82,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647698164.jpeg',
@@ -152,7 +152,7 @@ export const squad = [
     {
         name: 'Ramon',
         number: 20,
-        position: 'Lateral Esquerdo',
+        position: 'Lateral Esq',
         age: 20,
         overall: 77,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698499.jpeg',
@@ -170,7 +170,7 @@ export const squad = [
     {
         name: 'Maurício Isla',
         number: 44,
-        position: 'Lateral Direito',
+        position: 'Lateral Dir',
         age: 33,
         overall: 75,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693605.jpeg',
@@ -188,7 +188,7 @@ export const squad = [
     {
         name: 'William Arão',
         number: 5,
-        position: 'Meio-Campo',
+        position: 'Meio',
         age: 29,
         overall: 80,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647697965.jpeg',
@@ -197,7 +197,7 @@ export const squad = [
     {
         name: 'Renê',
         number: 6,
-        position: 'Lateral Esquerdo',
+        position: 'Lateral Esq',
         age: 29,
         overall: 73,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698410.jpeg',
@@ -206,7 +206,7 @@ export const squad = [
     {
         name: 'Éverton Ribeiro',
         number: 7,
-        position: 'Meio-campo Ofensivo',
+        position: 'Meio Ofensivo',
         age: 32,
         overall: 83,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698217.jpeg',
@@ -215,7 +215,7 @@ export const squad = [
     {
         name: 'Thiago Maia',
         number: 8,
-        position: 'Meio-campo Defensivo',
+        position: 'Meio Defensivo',
         age: 24,
         overall: 80,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647698128.jpeg',
@@ -269,12 +269,11 @@ export const squad = [
     {
         name: 'Matheus França',
         number: 42,
-        position: 'Meio-Campo ofensivo',
+        position: 'Meio ofensivo',
         age: 17,
         overall: 73,
         img: 'https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698323.jpeg',
         
     }
 
-]   
-
+]  

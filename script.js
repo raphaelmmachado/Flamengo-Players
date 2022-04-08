@@ -3,7 +3,6 @@ const fetchApi = async () => {
 
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-  console.log("fetch", data);
 
   const card = data.reduce((accumulator, player) => {
     accumulator += `

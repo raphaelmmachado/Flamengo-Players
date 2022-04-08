@@ -13,8 +13,9 @@ body{
 }
 .wrapper{
   display: grid;
-  grid-template-columns:  repeat(4, 1fr);
-  grid-column-gap: 1px;
+  place-items: center;
+  grid-template-columns:  repeat(6, 1fr);
+  gap: 2px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .card {
@@ -26,6 +27,7 @@ body{
 .profile1 {
   text-align: center;
   height: 85px;
+  width: 100%;
 }
 .name{
   font-size: 2rem;
@@ -39,6 +41,7 @@ body{
   justify-content: space-around;
   align-items: flex-end;
   font-size: 0.9rem;
+  width: 100%
 }
 .profile3{
   display: flex;
