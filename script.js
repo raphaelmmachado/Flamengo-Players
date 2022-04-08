@@ -1,10 +1,10 @@
-const fetchApi = async () => {
+const getAllPlayers = async () => {
   const url = "http://localhost:8000";
 
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
-  const card = data.reduce((accumulator, player) => {
+  const allPlayers = data.reduce((accumulator, player) => {
     accumulator += `
       <div class="card">
         <img class="photo" src=${player.img}
@@ -13,19 +13,19 @@ const fetchApi = async () => {
         <div class="name">${player.name}</div>
           <div class="profile2">
             <div class="profile3">
-            <div>Idade</div>
+            <div>Idade:</div>
             <div>${player.age}</div>
             </div>
             <div class="profile3">
-            <div>Camisa</div>
+            <div>Camisa:</div>
             <div>${player.number}</div>
             </div>
             <div class="profile3">
-            <div>Posição</div>
+            <div>Posição:</div>
             <div>${player.position}</div>
             </div>
             <div class="profile3">
-            <div>Habilidade</div>
+            <div>Habilidade:</div>
             <div>${player.overall}</div>
             </div>
           </div>
@@ -37,6 +37,7 @@ const fetchApi = async () => {
   }, "");
 
   const wrapper = document.querySelector("[data-wrapper]");
-  wrapper.innerHTML = card
+  wrapper.innerHTML = allPlayers
 };
-fetchApi();
+
+document.addEventListener('DOMContentLoaded', getAllPlayers());

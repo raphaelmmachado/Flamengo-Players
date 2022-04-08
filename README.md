@@ -1,13 +1,14 @@
 # Flamengo-card-deck
-I created and consumed my own api
+I created an api that serves some data from Flamengo, my favourite football / soccer team.
+Then in the frontend i create cards that shows all the players.
 
 ### Build with
 - HTML
 - CSS
 - JAVASCRIPT
-- NODE ( NPM, EXPRESS )
+- NODE ( EXPRESS )
 
 ### What I Learned
-- Create a server using Express
-- Create an api
-- Modules
+- Using Express to create a server and api.
+- Modules.
+- Nodemon.
