@@ -13,7 +13,5 @@ Then in the frontend i created cards that shows all the players informations.
 - Modules.
 - Nodemon.
 
-### Screenshot:
-![](\screenshot\fullscreen.png "Full Screen")
-![](\screenshot\responsive.png "responsive")
-![](\screenshot\responsive1.png "responsive")
+### Github Page:
+https://rm0909.github.io/Flamengo-cards/
