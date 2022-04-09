@@ -1,5 +1,5 @@
 const getAllPlayers = async () => {
-  const url = "http://localhost:8000";
+  const url = "https://flamengo-card.rm0909.repl.co";
 
   const response = await fetch(`${url}/get`);
   const data = await response.json();
