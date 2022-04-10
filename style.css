@@ -24,11 +24,12 @@ body {
 .wrapper {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: .5rem;
 }
 .card {
-  background-color: red;
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(62,6,8,0.9192051820728291) 25%, rgba(119,6,6,1) 50%, rgba(181,9,10,1) 75%, rgba(250,1,26,1) 100%);
   border: 2px solid rgba(0, 0, 0, 0.308);
   border-radius: 4px;
   box-shadow: 0px 1px rgba(0, 0, 0, 0.582);
@@ -41,9 +42,16 @@ body {
   text-shadow: 0px 2px black;
 }
 .name {
+  display: flex;
+  flex-direction: row;
   font-size: 2rem;
   font-family: "Londrina Solid", cursive, sans-serif;
   margin-bottom: 6px;
+  justify-content: space-around;
+}
+
+.country{
+  height: 2.3rem;
 }
 .profile2 {
   font-family: "Londrina Solid", cursive, sans-serif;
@@ -51,7 +59,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  font-size: 0.9rem;
+  font-size: 0.93rem;
   width: 100%;
 }
 .profile3 {

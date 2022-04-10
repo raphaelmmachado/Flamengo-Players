@@ -10,7 +10,10 @@ const getAllPlayers = async () => {
         <img class="photo" src=${player.img}
         alt="football player">
         <div class="profile1">
-        <div class="name">${player.name}</div>
+        <div class="name">
+            <img src='./images/fla.png' class='logo'>
+                          <div>${player.name}</div>
+                                     <img class='country' src='${player.country}'></div>
           <div class="profile2">
             <div class="profile3">
             <div>Idade:</div>
