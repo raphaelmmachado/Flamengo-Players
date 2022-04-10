@@ -1,6 +1,6 @@
 # Flamengo-card-deck
 I created an api that serves some data from Flamengo, my favourite football / soccer team.
-Then in the frontend i create cards that shows all the players informations.
+Then in the frontend i created cards that shows all the players informations.
 
 ### Build with:
 - HTML
@@ -13,7 +13,5 @@ Then in the frontend i create cards that shows all the players informations.
 - Modules.
 - Nodemon.
 
-### Screenshot:
-![](\screenshot\fullscreen.png "Full Screen")
-![](\screenshot\responsive.png "responsive")
-![](\screenshot\responsive1.png "responsive")
+### Github Page:
+https://rm0909.github.io/Flamengo-cards/
