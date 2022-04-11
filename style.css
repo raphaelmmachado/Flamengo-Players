@@ -14,13 +14,11 @@ body {
   margin: 3px;
   font-family: "Roboto", sans-serif;
 }
-/*h1 {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  text-shadow: -1px 0px 3px #0a0a0a4f;
-  font-size: 5rem;
-  color: red;
-}*/
+.search {
+  position: relative;
+  height: 1rem;
+  top: .2rem;
+}
 .wrapper {
   display: grid;
   place-items: center;
