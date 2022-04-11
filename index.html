@@ -2,51 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flamengo Squad</title>
-    <link rel="icon" href="./images/fla.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamengo Squad</title>
+  <link rel="icon" href="./images/fla.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <label for="search">Buscar Jogadores</label>
-  <img src="./images/lupa.png" class="search"><input type="search" name="search" id="search" data-search>
-  <label for="ability">Buscar por Habilidade</label>
-  <input type="number" id="ability" min="70" max="100" data-number>
+  <div class="container">
+    <div class="nameContainer">
+    <label for="search"><img src="./images/lupa.png" class="searchImg"></label>
+    <input type="search" name="search" class="search" placeholder="nome" data-search></input>
+  </div>
+
+  <div class="abilityContainer">
+    <label for="ability"><img src="./images/ability.png" class="searchImg" id="abilityImg"></label>
+    <input type="number" min="70" max="100" class="search" id="ability" pattern="[0-9]+" placeholder="habi..." data-number>
+  </div>
+  </div>
   
-  
-    <div class="wrapper" data-wrapper>
-        <template data-template>
-          <div class="card">
-            <img class="photo" src=${player.img}
-            alt="football player">
-            <div class="profile1">
-            <div class="name">${player.name}</div>
-              <div class="profile2">
-                <div class="profile3">
-                <div>Idade:</div>
-                <div>${player.age}</div>
-                </div>
-                <div class="profile3">
-                <div>Camisa:</div>
-                <div>${player.number}</div>
-                </div>
-                <div class="profile3">
-                <div>Posição:</div>
-                <div>${player.position}</div>
-                </div>
-                <div class="profile3">
-                <div>Habilidade:</div>
-                <div>${player.ability}</div>
-                </div>
-              </div>
+
+
+
+  <div class="wrapper" data-wrapper>
+    <template data-template>
+      <div class="card">
+        <img class="photo" src=${player.img} alt="football player">
+        <div class="profile1">
+          <div class="name">${player.name}</div>
+          <div class="profile2">
+            <div class="profile3">
+              <div>Idade:</div>
+              <div>${player.age}</div>
+            </div>
+            <div class="profile3">
+              <div>Camisa:</div>
+              <div>${player.number}</div>
+            </div>
+            <div class="profile3">
+              <div>Posição:</div>
+              <div>${player.position}</div>
+            </div>
+            <div class="profile3">
+              <div>Habilidade:</div>
+              <div>${player.ability}</div>
             </div>
           </div>
-        </template>
-    </div>
+        </div>
+      </div>
+    </template>
+  </div>
 </body>
 
 </html>

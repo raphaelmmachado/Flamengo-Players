@@ -14,16 +14,33 @@ body {
   margin: 3px;
   font-family: "Roboto", sans-serif;
 }
-.search {
-  position: relative;
-  height: 1rem;
-  top: .2rem;
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.search{
+  font-size: 2rem;
+  margin: 2rem;
+}
+::placeholder{
+  opacity: .3;
+}
+.searchImg {
+  height: 1.5rem;
+}
+
+#abilityImg{
+  height: 1.7rem;
 }
 .wrapper {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: .5rem;
+  margin: 2rem;
 }
 .card {
   background: rgb(0,0,0);

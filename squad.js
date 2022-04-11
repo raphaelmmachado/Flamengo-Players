@@ -1,6 +1,7 @@
 export const squad = [
   {
     name: "Gabriel Barbosa",
+    alsoKnownAs: "Gabigol",
     number: 9,
     position: "Atacante",
     age: 25,
@@ -21,6 +22,7 @@ export const squad = [
   },
   {
     name: "Bruno Henrique",
+    alsoKnownAs: "Speed Wonder",
     number: 27,
     position: "Atacante",
     age: 31,
@@ -31,6 +33,7 @@ export const squad = [
   },
   {
     name: "de Arrascaeta",
+    alsoKnownAs: "Arrasca",
     number: 14,
     position: "Meio Ofensivo",
     age: 27,
@@ -70,7 +73,7 @@ export const squad = [
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698359.jpeg",
   },
   {
-    name: "Felipe Luis",
+    name: "Filipe Luis",
     number: 16,
     position: "Lateral Esq",
     age: 36,
@@ -81,6 +84,7 @@ export const squad = [
   },
   {
     name: "Andreas Pereira",
+    alsoKnownAs: "Andreas",
     number: 18,
     position: "Meio",
     age: 26,
@@ -201,6 +205,7 @@ export const squad = [
   },
   {
     name: "Hugo Souza",
+    alsoKnownAs: "Neneca",
     number: 45,
     position: "Goleiro",
     age: 23,

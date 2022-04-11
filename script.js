@@ -6,10 +6,10 @@ let abilityInput = document.querySelector("[data-number]");
 
 /*I HAD TO HARDCODE HTML TEMPLATE BECAUSE STRING LITERALS WAS CAUSING REFERENCE ERROR*/
 const getAllPlayers = async () => {
-  const url = "https://flamengo-card.rm0909.repl.co";
+  const url = "http://localhost:8000";
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
+  
   const allPlayers = data.reduce((accumulator, player) => {
     accumulator += `
       <div class="card">
@@ -55,9 +55,10 @@ const getPlayerByName = async (input) => {
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
-  const filterPlayersByName = data.filter((filtered) => {
-    const name = filtered.name.toLowerCase();
-    return name === input;
+  const filterPlayersByName = data.filter((player) => {
+    const name = player.name.toLowerCase();
+    const known = player.alsoKnownAs ?? name;
+    return name.includes(input) || known.toLowerCase().includes(input)
   });
   const playerByName = filterPlayersByName
     .map((player) => {
@@ -98,8 +99,8 @@ const getPlayerByName = async (input) => {
   wrapper.innerHTML = playerByName;
 };
 
-searchBar.addEventListener("keyup", (e) => {
-  const input = e.target.value;
+searchBar.addEventListener("input", (e) => {
+  const input = e.target.value.toLowerCase();
   return getPlayerByName(input);
 });
 
@@ -156,5 +157,6 @@ const getPlayerByAbility = async (inputValue) => {
 
 abilityInput.addEventListener("input", (e) => {
   const inputValue = e.target.value;
+  if (inputValue === '') return getAllPlayers()
   return getPlayerByAbility(inputValue);
 });
