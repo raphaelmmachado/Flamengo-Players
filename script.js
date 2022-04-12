@@ -53,7 +53,7 @@ const getAllPlayers = async () => {
 document.addEventListener("DOMContentLoaded", getAllPlayers());
 
 const getPlayerByName = async (input) => {
-  const replitURL = "http://localhost:8000";
+  const replitURL = "https://flamengo-card.rm0909.repl.co";
   const response = await fetch(`${replitURL}/get`);
   const data = await response.json();
 
