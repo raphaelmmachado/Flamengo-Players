@@ -1,48 +1,48 @@
-// const replitURL = "https://flamengo-card.rm0909.repl.co";
-
+//const replitURL = "https://flamengo-card.rm0909.repl.co";
+// const localHostURL = "http://localhost:8000";
 
 let searchBar = document.querySelector("[data-search]");
-let abilityInput = document.querySelector("[data-number]");
 
-/*I HAD TO HARDCODE HTML TEMPLATE BECAUSE STRING LITERALS WAS CAUSING REFERENCE ERROR*/
+
+/*I HAD TO HARDCODE HTML TEMPLATE BECAUSE  WAS CAUSING REFERENCE ERROR*/
 const getAllPlayers = async () => {
-  const url = "http://localhost:8000";
-  const response = await fetch(`${url}/get`);
+  const replitURL = "https://flamengo-card.rm0909.repl.co";
+  const response = await fetch(`${replitURL}/get`);
   const data = await response.json();
-
+  
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
 
   const allPlayers = sortByAbility.reduce((accumulator, player) => {
     accumulator += `
-      <div class="card">
-        <img class="photo" src=${player.img}
-        alt="football player">
-        <div class="profile1">
-        <div class="name">
-            <img src='./images/fla.png' class='logo'>
-           <div>${player.name}</div>
-           <img class='country' src='${player.country}'></div>
-          <div class="profile2">
-            <div class="profile3">
-            <div>Idade:</div>
-            <div>${player.age}</div>
-            </div>
-            <div class="profile3">
-            <div>Camisa:</div>
-            <div>${player.number}</div>
-            </div>
-            <div class="profile3">
-            <div>Posição:</div>
-            <div>${player.position}</div>
-            </div>
-            <div class="profile3">
-            <div>Habilidade:</div>
-            <div>${player.ability}</div>
-            </div>
+    <div class="card">
+      <img class="photo" src=${player.img}
+      alt="football player">
+      <div class="profile1">
+      <div class="name">
+          <img src='./images/fla.png' class='logo'>
+         <div>${player.name}</div>
+         <img class='country' src='${player.country}'></div>
+        <div class="profile2">
+          <div class="profile3">
+          <div>Idade:</div>
+          <div>${player.age}</div>
+          </div>
+          <div class="profile3">
+          <div>Camisa:</div>
+          <div>${player.number}</div>
+          </div>
+          <div class="profile3">
+          <div>Posição:</div>
+          <div>${player.position}</div>
+          </div>
+          <div class="profile3">
+          <div>Habilidade:</div>
+          <div>${player.ability}</div>
           </div>
         </div>
       </div>
-      `;
+    </div>
+    `;
 
     return accumulator;
   }, "");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", getAllPlayers());
 
 const getPlayerByName = async (input) => {
   const url = "http://localhost:8000";
-  const response = await fetch(`${url}/get`);
+  const response = await fetch(`${replitURL}/get`);
   const data = await response.json();
 
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
@@ -72,8 +72,8 @@ const getPlayerByName = async (input) => {
         <div class="profile1">
         <div class="name">
             <img src='./images/fla.png' class='logo'>
-             <div>${player.name}</div>
-            <img class='country' src='${player.country}'></div>
+           <div>${player.name}</div>
+           <img class='country' src='${player.country}'></div>
           <div class="profile2">
             <div class="profile3">
             <div>Idade:</div>
