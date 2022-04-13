@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Roboto&display=swap");
+
 :root{
   --font-londrina-solid: "Londrina Solid", cursive, sans-serif;
 }
@@ -94,4 +95,10 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(62,6,8,0.919205182072
   border: 1px solid rgba(0, 0, 0, 0.733);
   border-radius: 1px;
   background-color: white;
+}
+
+@media (max-width: 374px) {
+ .search{
+   width: 70vw;
+ } 
 }
