@@ -3,13 +3,12 @@
 
 let searchBar = document.querySelector("[data-search]");
 
-
 /*I HAD TO HARDCODE HTML TEMPLATE BECAUSE  WAS CAUSING REFERENCE ERROR*/
-const getAllPlayers = async () => {
+async function getAllPlayers() {
   const replitURL = "https://flamengo-card.rm0909.repl.co";
   const response = await fetch(`${replitURL}/get`);
   const data = await response.json();
-  
+
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
 
   const allPlayers = sortByAbility.reduce((accumulator, player) => {
@@ -49,20 +48,33 @@ const getAllPlayers = async () => {
 
   const wrapper = document.querySelector("[data-wrapper]");
   wrapper.innerHTML = allPlayers;
-};
+}
 document.addEventListener("DOMContentLoaded", getAllPlayers());
 
-const getPlayerByName = async (input) => {
+async function getPlayerByName(input) {
   const replitURL = "https://flamengo-card.rm0909.repl.co";
   const response = await fetch(`${replitURL}/get`);
   const data = await response.json();
 
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
+
   const filterPlayersByName = sortByAbility.filter((player) => {
-    const name = player.name.toLowerCase();
+    //names in lowercase and ignoring accents
+    const name = player.name
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
     const known = player.alsoKnownAs ?? name;
-    return name.includes(input) || known.toLowerCase().includes(input)
+    return (
+      name.includes(input) ||
+      known
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .includes(input)
+    );
   });
+
   const playerByName = filterPlayersByName
     .map((player) => {
       return (player = `
@@ -100,9 +112,23 @@ const getPlayerByName = async (input) => {
 
   const wrapper = document.querySelector("[data-wrapper]");
   wrapper.innerHTML = playerByName;
-};
+}
+const updateDebounceText = debounce((input) => {
+  return getPlayerByName(input);
+});
 
 searchBar.addEventListener("input", (e) => {
   const input = e.target.value.toLowerCase();
-  return getPlayerByName(input);
+  updateDebounceText(input);
 });
+
+//make get request only when finish typing
+function debounce(cb, delay = 1000) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      cb(...args);
+    }, delay);
+  };
+}
