@@ -35,7 +35,7 @@ export const squad = [
     name: "de Arrascaeta",
     alsoKnownAs: "Arrasca",
     number: 14,
-    position: "Meio Ofensivo",
+    position: "Meio-Ofensivo",
     age: 27,
     ability: 87,
     country:
@@ -45,7 +45,7 @@ export const squad = [
   {
     name: "Diego Ribas",
     number: 10,
-    position: "Meio-campo",
+    position: "Meio-Campo",
     age: 37,
     ability: 76,
     country:
@@ -55,7 +55,7 @@ export const squad = [
   {
     name: "Vitinho",
     number: 11,
-    position: "Meio Ofensivo",
+    position: "Meio-Ofensivo",
     age: 28,
     ability: 82,
     country:
@@ -65,7 +65,7 @@ export const squad = [
   {
     name: "Lázaro",
     number: 13,
-    position: "Meio Ofensivo",
+    position: "Meio-Ofensivo",
     age: 19,
     ability: 78,
     country:
@@ -75,7 +75,7 @@ export const squad = [
   {
     name: "Filipe Luis",
     number: 16,
-    position: "Lateral Esq",
+    position: "Lateral Esquerdo",
     age: 36,
     ability: 84,
     country:
@@ -86,7 +86,7 @@ export const squad = [
     name: "Andreas Pereira",
     alsoKnownAs: "Andreas",
     number: 18,
-    position: "Meio",
+    position: "Meio-Campo",
     age: 26,
     ability: 82,
     country:
@@ -106,7 +106,7 @@ export const squad = [
   {
     name: "Rodinei",
     number: 20,
-    position: "Lateral Dir",
+    position: "Lateral Direito",
     age: 30,
     ability: 78,
     country:
@@ -156,7 +156,7 @@ export const squad = [
   {
     name: "Matheuzinho",
     number: 34,
-    position: "Lateral Dir",
+    position: "Lateral Direito",
     age: 21,
     ability: 77,
     country:
@@ -166,7 +166,7 @@ export const squad = [
   {
     name: "João Gomes",
     number: 35,
-    position: "Meio",
+    position: "Meio-Campo",
     age: 21,
     ability: 82,
     country:
@@ -176,7 +176,7 @@ export const squad = [
   {
     name: "Ramon",
     number: 20,
-    position: "Lateral Esq",
+    position: "Lateral Esquerdo",
     age: 20,
     ability: 77,
     country:
@@ -196,7 +196,7 @@ export const squad = [
   {
     name: "Maurício Isla",
     number: 44,
-    position: "Lateral Dir",
+    position: "Lateral Direito",
     age: 33,
     ability: 75,
     country:
@@ -217,7 +217,7 @@ export const squad = [
   {
     name: "William Arão",
     number: 5,
-    position: "Meio",
+    position: "Meio-Campo",
     age: 29,
     ability: 80,
     country:
@@ -227,7 +227,7 @@ export const squad = [
   {
     name: "Renê",
     number: 6,
-    position: "Lateral Esq",
+    position: "Lateral Esquerdo",
     age: 29,
     ability: 73,
     country:
@@ -237,7 +237,7 @@ export const squad = [
   {
     name: "Éverton Ribeiro",
     number: 7,
-    position: "Meio Ofensivo",
+    position: "Meio-Ofensivo",
     age: 32,
     ability: 83,
     country:
@@ -247,7 +247,7 @@ export const squad = [
   {
     name: "Thiago Maia",
     number: 8,
-    position: "Meio Defensivo",
+    position: "Meio-Defensivo",
     age: 24,
     ability: 80,
     country:
@@ -307,7 +307,7 @@ export const squad = [
   {
     name: "Matheus França",
     number: 42,
-    position: "Meio ofensivo",
+    position: "Meio-Ofensivo",
     age: 17,
     ability: 73,
     country:
