@@ -50,12 +50,19 @@ body {
 #abilityImg {
   height: 1.7rem;
 }
+.container2{
+  display: flex;
+  flex-direction: column;
+}
+#sortBy{
+  text-align: center;
+}
 .sortContainer {
-  text-align: justify;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  gap: 30%;
+  justify-content: center;
+  gap: 20%;
+  margin: 4%;
 }
 .sortClick:hover {
   cursor: pointer;
@@ -110,6 +117,7 @@ body {
 }
 .photo {
   width: 100%;
+  height: auto;
   border: 1px solid rgba(0, 0, 0, 0.733);
   border-radius: 1px;
   background-color: white;
@@ -127,12 +135,11 @@ body {
     
   }
   .sortClick {
-    width: 30%;
+    width: fit-content;
   }
     @media (max-width: 374px) {
       .search {
         width: 70vw;
       }
     }
-  
 }
