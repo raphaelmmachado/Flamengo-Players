@@ -129,7 +129,7 @@ searchBar.addEventListener("input", (e) => {
 });
 
 //make get request only when finish typing
-function debounce(cb, delay = 1000) {
+function debounce(cb, delay = 750) {
   let timeout;
   return (...args) => {
     clearTimeout(timeout);
