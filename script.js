@@ -1,6 +1,6 @@
 // const replitURL = "https://flamengo-card.rm0909.repl.co";
 // const localHostURL = "http://localhost:8000";
-
+//   const url = "https://flamengo-players-api.herokuapp.com/"
 const sortByNumberButton = document.querySelector("[data-sortByNumber]");
 const sortByAgeButton = document.querySelector("[data-sortByAge]");
 const sortByAbilityButton = document.querySelector("[data-sortByAbility]");
@@ -8,8 +8,8 @@ let searchBar = document.querySelector("[data-search]");
 
 /*I HAD TO HARDCODE HTML TEMPLATE BECAUSE  WAS CAUSING REFERENCE ERROR*/
 async function getAllPlayers() {
-  const replitURL = "https://flamengo-card.rm0909.repl.co";
-  const response = await fetch(`${replitURL}/get`);
+  const url = "https://flamengo-players-api.herokuapp.com/"
+  const response = await fetch(`${url}/get`);
   const data = await response.json();
 
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
@@ -55,8 +55,8 @@ async function getAllPlayers() {
 document.addEventListener("DOMContentLoaded", getAllPlayers);
 
 async function getPlayerByName(input) {
-  const replitURL = "https://flamengo-card.rm0909.repl.co";
-  const response = await fetch(`${replitURL}/get`);
+  const url = "https://flamengo-players-api.herokuapp.com/"
+  const response = await fetch(`${url}/get`);
   const data = await response.json();
 
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
@@ -140,8 +140,8 @@ function debounce(cb, delay = 750) {
 }
 
 async function sortPlayersByNumber() {
-  const replitURL = "https://flamengo-card.rm0909.repl.co";
-  const response = await fetch(`${replitURL}/get`);
+  const url = "https://flamengo-players-api.herokuapp.com/"
+  const response = await fetch(`${url}/get`);
   const data = await response.json();
 
   const sortByNumber = data.sort((a, b) => a.number - b.number);
@@ -185,8 +185,8 @@ async function sortPlayersByNumber() {
   wrapper.innerHTML = cards;
 }
 async function sortPlayersByAge() {
-  const replitURL = "https://flamengo-card.rm0909.repl.co";
-  const response = await fetch(`${replitURL}/get`);
+  const url = "https://flamengo-players-api.herokuapp.com/"
+  const response = await fetch(`${url}/get`);
   const data = await response.json();
 
   const sortByAge = data.sort((a, b) => b.age - a.age);
