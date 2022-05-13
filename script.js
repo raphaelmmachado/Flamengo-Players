@@ -1,6 +1,3 @@
-// const replitURL = "https://flamengo-card.rm0909.repl.co";
-// const localHostURL = "http://localhost:8000";
-//   const url = "https://flamengo-players-api.herokuapp.com/"
 const sortByNumberButton = document.querySelector("[data-sortByNumber]");
 const sortByAgeButton = document.querySelector("[data-sortByAge]");
 const sortByAbilityButton = document.querySelector("[data-sortByAbility]");
@@ -8,7 +5,7 @@ let searchBar = document.querySelector("[data-search]");
 
 /*I HAD TO HARDCODE HTML TEMPLATE BECAUSE  WAS CAUSING REFERENCE ERROR*/
 async function getAllPlayers() {
-  const url = "https://flamengo-players-api.herokuapp.com/"
+  const url = "https://flamengo-players-api.herokuapp.com"
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
@@ -55,7 +52,7 @@ async function getAllPlayers() {
 document.addEventListener("DOMContentLoaded", getAllPlayers);
 
 async function getPlayerByName(input) {
-  const url = "https://flamengo-players-api.herokuapp.com/"
+  const url = "https://flamengo-players-api.herokuapp.com"
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
@@ -140,7 +137,7 @@ function debounce(cb, delay = 750) {
 }
 
 async function sortPlayersByNumber() {
-  const url = "https://flamengo-players-api.herokuapp.com/"
+  const url = "https://flamengo-players-api.herokuapp.com"
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
@@ -185,7 +182,7 @@ async function sortPlayersByNumber() {
   wrapper.innerHTML = cards;
 }
 async function sortPlayersByAge() {
-  const url = "https://flamengo-players-api.herokuapp.com/"
+  const url = "https://flamengo-players-api.herokuapp.com"
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
