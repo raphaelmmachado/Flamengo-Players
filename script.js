@@ -118,7 +118,7 @@ async function getPlayerByName(input) {
 //DEBOUNCE
 const updateDebounceText = debounce((input) => {
   return getPlayerByName(input);
-}, 750);
+}, 400);
 
 searchBar.addEventListener("input", (e) => {
   const input = e.target.value.toLowerCase();
