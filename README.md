@@ -1,4 +1,4 @@
-# Flamengo-card-deck
+# Flamengo Cards
 I created an api that serves some data from Flamengo, my favourite football / soccer team.
 Then in the frontend i created cards that shows all the players informations.
 
@@ -20,7 +20,7 @@ https://rm0909.github.io/Flamengo-cards/
 
 ________________________________________________________________________________________________
 
-# Flamengo-Cards
+# Flamengo Cards
 Eu criei uma api que envia dados sobre os jogadores do Flamengo, meu time de coração. 
 Com isso eu criei cards que mostram esses dados dos jogadores.
 
