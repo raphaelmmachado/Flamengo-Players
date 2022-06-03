@@ -488,6 +488,7 @@ async function sortPlayersByPosition() {
   const response = await fetch(`${url}/get`);
   const data = await response.json();
 
+  const manager = data.filter(player=> player.position === "Treinador")
   const goalKeepers = data.filter((player) => player.position === "Goleiro");
   const defenders = data.filter((player) => player.position === "Zagueiro");
   const sideBacks = data.filter(
@@ -502,6 +503,70 @@ async function sortPlayersByPosition() {
       player.position === "Meio-Ofensivo"
   );
   const attackers = data.filter((player) => player.position === "Atacante");
+
+  const managerCard = manager.map(player => {
+    return (player = `
+    <figure class="card">
+    <div class="card-front">
+      <img class="photo" src=${player.img}
+      alt="football player">
+      <div class="profile1">
+      <div class="name">
+          <img src='./images/fla.png' class='logo'>
+         <div>${
+           player.name === "Gustavo Henrique" ? "Gust. Henrique" : player.name
+         }</div>
+         <img class='country' src='${player.country}'></div>
+        <div class="profile2">
+          <div class="profile3">
+          <div>Idade:</div>
+          <div>${player.age}</div>
+          </div>
+          <div class="profile3">
+          <div>Camisa:</div>
+          <div>${player.number}</div>
+          </div>
+          <div class="profile3">
+          <div>Posição:</div>
+          <div>${
+            player.position === "Lateral Esquerdo"
+              ? "Lat. Esquerdo"
+              : player.position && player.position === "Lateral Direito"
+              ? "Lat. Direito"
+              : player.position
+          }</div>
+          </div>
+          <div class="profile3">
+          <div>Habilidade:</div>
+          <div>${player.ability}</div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="card-back">
+      <div class="backside-info">
+      <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
+      <p><span class="black-text">Cidade:</span> ${player.city}</p>
+      <p><span class="black-text">Nascimento:</span> ${player.birthDate}</p>
+      <p><span class="black-text">Perna:</span> ${player.leg}</p>
+      <p><span class="black-text">Altura:</span> ${player.height}</p>
+      <p><span class="black-text">Chegou:</span> ${player.arriveIn}</p>
+      <p><span class="black-text">Contrato:</span> ${player.endOfContract}</p>
+      <p><span class="black-text">Ex-times:</span> ${player.formerTeams}</p>
+      <br>
+      <p><span class="black-text">Valor:</span>  €${
+        player.marketValueInEuros
+      }</p>
+      <p><span class="black-text">Popularidade:</span> ${player.fanBase}</p>
+      </div>
+      </div>
+
+    </figure>
+    `)
+  })
+//-----------------------------------------------------------------------------
 
   const goalKeepersCards = goalKeepers.map((player) => {
     return (player = `
@@ -828,12 +893,14 @@ async function sortPlayersByPosition() {
   const cardsRow = document.querySelector("[data-cards-row]");
   cardsRow.classList.remove("hidden");
 
+  let managerCardContainer = document.querySelector("[data-manager]")
   let goalKeepersContainer = document.querySelector("[data-goalkeepers]");
   let defendersContainer = document.querySelector("[data-defenders]");
   let sideBacksContainer = document.querySelector("[data-side-backs]");
   let midfieldersContainer = document.querySelector("[data-midfielders]");
   let attackersContainer = document.querySelector("[data-atacantes]");
 
+  managerCardContainer.innerHTML = managerCard
   goalKeepersContainer.innerHTML = goalKeepersCards;
   defendersContainer.innerHTML = defendersCards;
   sideBacksContainer.innerHTML = sideBacksCards;

@@ -197,7 +197,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.position-h1{
+  width: fit-content;
+  color: rgb(136, 2, 2);
 
+}
 .hidden{
   display: none;
 }
