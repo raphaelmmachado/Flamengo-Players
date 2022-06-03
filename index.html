@@ -21,48 +21,82 @@
     <div class="container2">
       <div id="sortBy">Ordenar por:</div>
       <div class="sortContainer">
-        <div class="sortClick" data-sortByMarketValue><img src="./images/value.png">Valor</div>
+        <div class="sortClick" data-sortByPosition><img src="./images/team_position.png">Posição</div>
+        <div class="sortClick" data-sortByAbility><img src="./images/003-soccer-player.png" alt="habilidade">Habilidade</div>
+        <div class="sortClick" data-sortByMarketValue><img src="./images/value.png" alt="valor de mercado">Valor</div>
         <div class="sortClick" data-sortByNumber>
-          <img src="./images/001-football-shirt.png" alt="football shirt">Camisa
+          <img src="./images/001-football-shirt.png" alt="camisa de football">Camisa
         </div>
         <div class="sortClick" data-sortByAge><img src="./images/001-age.png" alt="age">Idade</div>
-        <div class="sortClick" data-sortByAbility><img src="./images/003-soccer-player.png">Habilidade</div>
+        
       </div>
     </div>
   </div>
 
-
   <div class="wrapper" data-wrapper>
     <template>
       <figure class="card">
-        <img class="photo" src=${player.img} alt="football player">
-        <div class="profile1">
+        <div class="card-front">
+          <img class="photo" src=${player.img}
+          alt="football player">
+          <div class="profile1">
           <div class="name">
-            <img src='./images/fla.png' class='logo'>
-            <div>${player.name}</div>
-            <img class='country' src='${player.country}'>
-          </div>
-          <div class="profile2">
-            <div class="profile3">
+              <img src='./images/fla.png' class='logo'>
+             <div>${player.name === "Gustavo Henrique" ? "Gust. Henrique" : player.name}</div>
+             <img class='country' src='${player.country}'></div>
+            <div class="profile2">
+              <div class="profile3">
               <div>Idade:</div>
               <div>${player.age}</div>
-            </div>
-            <div class="profile3">
+              </div>
+              <div class="profile3">
               <div>Camisa:</div>
               <div>${player.number}</div>
-            </div>
-            <div class="profile3">
+              </div>
+              <div class="profile3">
               <div>Posição:</div>
-              <div>${player.position}</div>
-            </div>
-            <div class="profile3">
+              <div>${player.position === "Lateral Esquerdo" ? "Lat. Esquerdo": player.position && player.position === "Lateral Direito" ? "Lat. Direito" : player.position}</div>
+              </div>
+              <div class="profile3">
               <div>Habilidade:</div>
               <div>${player.ability}</div>
+              </div>
             </div>
           </div>
-        </div>
-      </figure>
+          </div>
+    
+    
+          <div class="card-back">
+          <div class="backside-info">
+          <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
+          <p><span class="black-text">Cidade:</span> ${player.city}</p>
+          <p><span class="black-text">Nascimento:</span> ${player.birthDate}</p>
+          <p><span class="black-text">Perna:</span> ${player.leg}</p>
+          <p><span class="black-text">Altura:</span> ${player.height}</p>
+          <p><span class="black-text">Chegou:</span> ${player.arriveIn}</p>
+          <p><span class="black-text">Contrato:</span> ${player.endOfContract}</p>
+          <p><span class="black-text">Ex-times:</span> ${player.formerTeams}</p>
+          <br>
+          <p><span class="black-text">Valor:</span>  €${player.marketValueInEuros}</p>
+          <p><span class="black-text">Popularidade:</span> ${player.fanBase}</p>
+          </div>
+          </div>
+    
+        </figure>
     </template>
+  </div>
+
+  <div class="hidden" data-cards-row>
+    <h1>GOLEIROS</h1>
+    <div data-goalkeepers class="cards-by-position"></div>
+    <h1>ZAGUEIROS</h1>
+    <div data-defenders class="cards-by-position"></div>
+    <h1>LATERAIS</h1>
+    <div data-side-backs class="cards-by-position"></div>
+    <h1>MEIOS-CAMPOS</h1>
+    <div data-midfielders class="cards-by-position"></div>
+    <h1>ATACANTES</h1>
+    <div data-atacantes class="cards-by-position"></div>
   </div>
 </body>
 

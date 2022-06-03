@@ -26,6 +26,8 @@
 
 body {
   background-image: url("./images/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
   margin: 3px;
   position: relative;
@@ -133,6 +135,7 @@ body {
   backface-visibility: hidden;
 }
 .backside-info{
+  padding: 3px;
   display: flex;
   flex-direction: column;
   font-size: 1.4rem;
@@ -180,6 +183,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .photo {
   display: block;
   width: 100%;
@@ -188,8 +192,17 @@ body {
   border-radius: 1px;
   background-color: white;
 }
+.cards-by-position{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
-@media (max-width: 720px) {
+.hidden{
+  display: none;
+}
+
+@media (max-width: 790px) {
   .sortContainer {
     text-align: center;
     flex-direction: row;
@@ -202,9 +215,17 @@ body {
   .sortClick {
     width: fit-content;
   }
-  @media (max-width: 379px) {
+  @media (max-width: 380px) {
     .search {
       width: 50vw;
+    }
+    .container2{
+      margin: 0;
+    }
+    .sortContainer{
+      
+      display: grid;
+      grid-template-columns:  repeat(3, 1fr);
     }
   }
 }
