@@ -21,6 +21,7 @@
     <div class="container2">
       <div id="sortBy">Ordenar por:</div>
       <div class="sortContainer">
+        <div class="sortClick" data-sortByMarketValue><img src="./images/value.png">Valor</div>
         <div class="sortClick" data-sortByNumber>
           <img src="./images/001-football-shirt.png" alt="football shirt">Camisa
         </div>
@@ -32,7 +33,36 @@
 
 
   <div class="wrapper" data-wrapper>
-
+    <template>
+      <figure class="card">
+        <img class="photo" src=${player.img} alt="football player">
+        <div class="profile1">
+          <div class="name">
+            <img src='./images/fla.png' class='logo'>
+            <div>${player.name}</div>
+            <img class='country' src='${player.country}'>
+          </div>
+          <div class="profile2">
+            <div class="profile3">
+              <div>Idade:</div>
+              <div>${player.age}</div>
+            </div>
+            <div class="profile3">
+              <div>Camisa:</div>
+              <div>${player.number}</div>
+            </div>
+            <div class="profile3">
+              <div>Posição:</div>
+              <div>${player.position}</div>
+            </div>
+            <div class="profile3">
+              <div>Habilidade:</div>
+              <div>${player.ability}</div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </template>
   </div>
 </body>
 

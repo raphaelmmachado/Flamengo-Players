@@ -9,6 +9,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647693713.jpeg",
+    
+    fullName: "Gabriel Barbosa Almeida",
+    leg: "Canhoto",
+    height: "1,78m",
+    city: "São Bernardo do Campo - SP",
+    birthDate: "30/08/1996",
+    formerTeams: [" Santos"," Internazionale"," Benfica"],
+    arriveIn: "28/01/2020",
+    endOfContract: "31/12/2024",
+    fanBase: "⭐",
+    marketValueInEuros: 26000000
   },
   {
     name: "Diego Alves",
@@ -19,6 +30,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/1/1643043552.png",
+
+    fullName: "Diego Alves Carreira",
+    leg: "Canhoto",
+    height: "1,88m",
+    city: "Rio de Janeiro - RJ",
+    birthDate: "24/06/1985",
+    formerTeams: [" Atlético Mineiro"," Valencia"],
+    arriveIn: "2017",
+    endOfContract: "31/12/2022",
+    fanBase: 3,
+    marketValueInEuros: 800000
   },
   {
     name: "Bruno Henrique",
@@ -30,6 +52,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694046.jpeg",
+
+    fullName: "Bruno Henrique Pinto",
+    leg: "Destro",
+    height: "1,84m",
+    city: "Belo Horizonte - MG",
+    birthDate: "30/12/1990",
+    formerTeams: [" Cruzeiro"," Santos"," WolfsBurg"],
+    arriveIn: "23/01/2019",
+    endOfContract: "31/12/2023",
+    fanBase: 5,
+    marketValueInEuros: 6000000,
   },
   {
     name: "de Arrascaeta",
@@ -41,6 +74,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-uruguay_1f1fa-1f1fe.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698294.jpeg",
+
+    fullName: "Giorgian Daniel de Arrascaeta Benedetti",
+    leg: "Destro",
+    height: "1,72m",
+    city: "Nuevo Berlin",
+    birthDate: "01/06/1994",
+    formerTeams: [" Cruzeiro "," Defensor"],
+    arriveIn: "12/01/2019",
+    endOfContract: "31/12/2022",
+    fanBase: 5,
+    marketValueInEuros: 17000000
   },
   {
     name: "Diego Ribas",
@@ -51,6 +95,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698248.jpeg",
+
+    fullName: "Diego Ribas da Cunha",
+    leg: "Destro",
+    height: "1,73m",
+    city: "Ribeirão Preto - SP",
+    birthDate: "28/02/1985",
+    formerTeams: [" Atlético Madrid"," Juventus"],
+    arriveIn: "19/07/2016",
+    endOfContract: "31/12/2022",
+    fanBase: 4,
+    marketValueInEuros: 800000
   },
   {
     name: "Vitinho",
@@ -61,6 +116,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694095.jpeg",
+
+    fullName: "Victor Vinícius Coelho dos Santos",
+    leg: "AmbiDestro",
+    height: "1,80m",
+    city: "Rio de Janeiro - RJ",
+    birthDate: "09/10/1993",
+    formerTeams: [" Internacional"," CSKA Moscow"," Botafogo"],
+    arriveIn: "30/07/2018",
+    endOfContract: "31/12/2022",
+    fanBase: 3,
+    marketValueInEuros: 5000000
   },
   {
     name: "Lázaro",
@@ -71,6 +137,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698359.jpeg",
+
+    fullName: "Lázaro Vinícius Marques",
+    leg: "Destro",
+    height: "1,81m",
+    city: "Belo Horizonte - MG",
+    birthDate: "12/03/2002",
+    formerTeams: [""],
+    arriveIn: "27/01/2022",
+    endOfContract: "10/03/2025",
+    fanBase: 3,
+    marketValueInEuros: 6000000,
   },
   {
     name: "Filipe Luis",
@@ -81,6 +158,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698436.jpeg",
+
+    fullName: "Filipe Luis Kasmirski",
+    leg: "Canhoto",
+    height: "1,82m",
+    city: "Jaraguá do Sul - SC",
+    birthDate: "09/08/1985",
+    formerTeams: [" Atlético Madrid", " Chelsea"],
+    arriveIn: "23/07/2019",
+    endOfContract: "31/12/2022",
+    fanBase: 5,
+    marketValueInEuros: 800000,
   },
   {
     name: "Andreas Pereira",
@@ -92,6 +180,16 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647697934.jpeg",
+
+    fullName: "Andreas Hugo Hoelgebaum Pereira",
+    leg: "Destro",
+    height: "1,78m",
+    city: "Duffel, Bélgica",
+    birthDate: "01/01/1996",
+    formerTeams: [" Manchester United"],
+    arriveIn: "20/08/2021",
+    endOfContract: "30/06/2022",
+    fanBase: 4,
   },
   {
     name: "Gustavo Henrique",
@@ -102,9 +200,21 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693403.jpeg",
+
+    fullName: "Gustavo Henrique Vernes",
+    leg: "Destro",
+    height: "1,96m",
+    city: "São Paulo - SP",
+    birthDate: "24/03/1993",
+    formerTeams: [" Santos"],
+    arriveIn: "13/01/2020",
+    endOfContract: "31/12/2023",
+    fanBase: 2,
+    marketValueInEuros: 2800000
   },
   {
     name: "Rodinei",
+    alsoKnownAs: "Rodilindo",
     number: 20,
     position: "Lateral Direito",
     age: 30,
@@ -112,9 +222,21 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693574.jpeg",
+
+    fullName: "Rodinei Marcelo de Almeida",
+    leg: "Destro",
+    height: "1,75m",
+    city: "São Paulo - SP",
+    birthDate: "24/03/1993",
+    formerTeams: [" Ponte Preta"],
+    arriveIn: "02/01/2016",
+    endOfContract: "31/12/2016",
+    fanBase: 1,
+    marketValueInEuros: 1000000,
   },
   {
     name: "Pedro",
+    alsoKnownAs: "Queixada",
     number: 21,
     position: "Atacante",
     age: 24,
@@ -122,6 +244,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694277.jpeg",
+
+    fullName: "Pedro Guilherme Abreu dos Santos",
+    leg: "Destro",
+    height: "1,85m",
+    city: "Rio de Janeiro - RJ",
+    birthDate: "20/06/1997",
+    formerTeams: [" Fluminense"," Fiorentina"],
+    arriveIn: "04/01/2021",
+    endOfContract: "31/12/2025",
+    fanBase: 5,
+    marketValueInEuros: 10000000
   },
   {
     name: "David Luiz",
@@ -132,6 +265,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693177.jpeg",
+
+    fullName: "David Luiz Moreira Marinho",
+    leg: "Destro",
+    height: "1,89m",
+    city: "Diadema - SP",
+    birthDate: "22/04/1987",
+    formerTeams: [" Chelsea"," Paris"," Arsenal"],
+    arriveIn: "11/09/2021",
+    endOfContract: "31/12/2022",
+    fanBase: 5,
+    marketValueInEuros: 2000000
   },
   {
     name: "Rodrigo Caio",
@@ -142,9 +286,21 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693227.jpeg",
+
+    fullName: "Rodrigo Caio Coquette Russo",
+    leg: "Destro",
+    height: "1,82m",
+    city: "Dracena",
+    birthDate: "17/08/1993",
+    formerTeams: [" São Paulo"],
+    arriveIn: "01/01/2019",
+    endOfContract: "31/12/2023",
+    fanBase: 5,
+    marketValueInEuros:5000000
   },
   {
     name: "Marinho",
+    alsoKnownAs: "Dimarinho",
     number: 31,
     position: "Atacante",
     age: 31,
@@ -152,6 +308,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/7/1647694222.jpeg",
+
+    fullName: "Mário Sérgio Santos Costa",
+    leg: "Canhoto",
+    height: "1,69m",
+    city: "Penedo - AL",
+    birthDate: "29/05/1990",
+    formerTeams: [" Santos"," Grêmio"," Cruzeiro"],
+    arriveIn: "28/01/2022",
+    endOfContract: "31/12/2023",
+    fanBase: 4,
+    marketValueInEuros:3000000
   },
   {
     name: "Matheuzinho",
@@ -162,6 +329,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693640.jpeg",
+
+    fullName: "Matheus França Silva",
+    leg: "Destro",
+    height: "1,71m",
+    city: "Londrina - PR",
+    birthDate: "08/09/2000",
+    formerTeams: [" Londrina"],
+    arriveIn: "20/07/2020",
+    endOfContract: "31/12/2023",
+    fanBase: 3,
+    marketValueInEuros:8000000
   },
   {
     name: "João Gomes",
@@ -172,6 +350,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647698164.jpeg",
+
+    fullName: "João Victor Gomes da Silva",
+    leg: "Destro",
+    height: "1,76m",
+    city: "Rio de Janeiro - RJ",
+    birthDate: "12/02/2001",
+    formerTeams: [" "],
+    arriveIn: "05/07/2021",
+    endOfContract: "31/12/2025",
+    fanBase: 5,
+    marketValueInEuros:9000000
   },
   {
     name: "Ramon",
@@ -182,6 +371,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698499.jpeg",
+
+    fullName: "Ramon Ramos Lima",
+    leg: "Canhoto",
+    height: "1,79m",
+    city: "São João de Meriti - RJ",
+    birthDate: "13/03/2001",
+    formerTeams: [" "],
+    arriveIn: "08/04/2021",
+    endOfContract: "31/12/2022",
+    fanBase: 2,
+    marketValueInEuros: 2500000
   },
   {
     name: "Léo Pereira",
@@ -192,9 +392,21 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693375.jpeg",
+
+    fullName: "Leonardo Pereira",
+    leg: "Canhoto",
+    height: "1,89m",
+    city: "Curitiba - PR",
+    birthDate: "31/01/1996",
+    formerTeams: [" Atlético Paranaese"],
+    arriveIn: "28/01/2020",
+    endOfContract: "31/12/2024",
+    fanBase: 1,
+    marketValueInEuros:3500000,
   },
   {
     name: "Maurício Isla",
+    alsoKnownAs: "Huaso",
     number: 44,
     position: "Lateral Direito",
     age: 33,
@@ -202,6 +414,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-chile_1f1e8-1f1f1.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/3/1647693605.jpeg",
+
+    fullName: "Maurício Aníbal Isla Isla",
+    leg: "Destro",
+    height: "1,76m",
+    city: "Buin",
+    birthDate: "12/06/1988",
+    formerTeams: [" Juventus"," Udinese"],
+    arriveIn: "19/08/2020",
+    endOfContract: "31/12/2023",
+    fanBase: 1,
+    marketValueInEuros:500000,
   },
   {
     name: "Hugo Souza",
@@ -213,9 +436,20 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/1/1643043703.png",
+
+    fullName: "Hugo de Souza Nogueira",
+    leg: "Destro",
+    height: "1,96m",
+    city: "Duque de Caxias - RJ",
+    birthDate: "31/01/1999",
+    formerTeams: [" "],
+    arriveIn: "01/09/2019",
+    endOfContract: "31/12/2025",
+    fanBase: 1,
+    marketValueInEuros:4000000,
   },
   {
-    name: "William Arão",
+    name: "Willian Arão",
     number: 5,
     position: "Meio-Campo",
     age: 29,
@@ -223,16 +457,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647697965.jpeg",
-  },
-  {
-    name: "Renê",
-    number: 6,
-    position: "Lateral Esquerdo",
-    age: 29,
-    ability: 73,
-    country:
-      "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
-    img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1647698410.jpeg",
+
+    fullName: "Willian Souza Arão da Silva",
+    leg: "Destro",
+    height: "1,85m",
+    city: "São Paulo - SP",
+    birthDate: "12/03/1992",
+    formerTeams: [" Corinthians"," Botafogo"],
+    arriveIn: "01/01/2016",
+    endOfContract: "31/12/2023",
+    fanBase: 2,
+    marketValueInEuros:7000000,
   },
   {
     name: "Éverton Ribeiro",
@@ -243,6 +478,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698217.jpeg",
+
+    fullName: "Éverton Augusto de Barros Ribeiro",
+    leg: "Canhoto",
+    height: "1,74m",
+    city: "Arujá - SP",
+    birthDate: "10/04/1989",
+    formerTeams: [" Cruzeiro", " Coritiba", " Corinthians"],
+    arriveIn: "20/06/2017",
+    endOfContract: "31/12/2023",
+    fanBase: 5,
+    marketValueInEuros:6000000,
   },
   {
     name: "Thiago Maia",
@@ -253,6 +499,18 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/5/1647698128.jpeg",
+
+    fullName: "Thiago Maia Alencar",
+    leg: "Canhoto",
+    height: "1,80m",
+    city: "Boa Vista - RR",
+    birthDate: "23/03/1997",
+    formerTeams: [" Santos", " Lille"],
+    arriveIn: "12/01/2022",
+    endOfContract: "31/12/2026",
+    fanBase: 3,
+    marketValueInEuros:5500000,
+
   },
   {
     name: "Matheus Cunha",
@@ -263,6 +521,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/1/1643328461.png",
+
+    fullName: "Matheus Cunha Queiroz",
+    leg: "Destro",
+    height: "1,93m",
+    city: "Tupi Paulista - SP",
+    birthDate: "24/05/2001",
+    formerTeams: [" "],
+    arriveIn: "",
+    endOfContract: "",
+    fanBase: 1,
+    marketValueInEuros: null,
   },
   {
     name: "Noga",
@@ -273,6 +542,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693439.jpeg",
+
+    fullName: "Gabriel Rodrigues Noga",
+    leg: "Destro",
+    height: "1,83m",
+    city: "Volta Redonda - RJ",
+    birthDate: "25/01/2001",
+    formerTeams: [" "],
+    arriveIn: "2020",
+    endOfContract: "31/12/2024",
+    fanBase: 2,
+    marketValueInEuros:2000000
   },
   {
     name: "Cleiton",
@@ -283,6 +563,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693519.jpeg",
+
+    fullName: "Cleiton Santana dos Santos",
+    leg: "",
+    height: "",
+    city: "Bahia",
+    birthDate: "25/04/2003",
+    formerTeams: [" "],
+    arriveIn: "2022",
+    endOfContract: "",
+    fanBase: 1,
+    marketValueInEuros:null,
   },
   {
     name: "Fabrício Bruno",
@@ -293,6 +584,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693135.jpeg",
+
+    fullName: "Fabrício Bruno Soares de Faria",
+    leg: "Destro",
+    height: "1,92m",
+    city: "Contagem - MG",
+    birthDate: "12/02/1996",
+    formerTeams: [" Red Bull Bragantino"],
+    arriveIn: "2022",
+    endOfContract: "",
+    fanBase: 1,
+    marketValueInEuros:3500000
   },
   {
     name: "Pablo",
@@ -303,6 +605,17 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/2/1647693074.jpeg",
+
+    fullName: "Pablo do Nascimento Castro",
+    leg: "Destro",
+    height: "1,88m",
+    city: "São Luís - MA",
+    birthDate: "21/06/1991",
+    formerTeams: [" Corinthians"],
+    arriveIn: "14/03/2022",
+    endOfContract: "31/12/2025",
+    fanBase: 3,
+    marketValueInEuros:7000000,
   },
   {
     name: "Matheus França",
@@ -313,6 +626,37 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/6/1647698323.jpeg",
+
+    fullName: "Matheus França de Oliveira",
+    leg: "Destro",
+    height: "",
+    city: "Rio de Janeiro - RJ",
+    birthDate: "01/04/2004",
+    formerTeams: [" "],
+    arriveIn: "2022",
+    endOfContract: "",
+    fanBase: 1,
+    marketValueInEuros:null,
+  },
+  { 
+    name: "Ayrton Lucas",
+    number: 6,
+    position: "Lateral Esquerdo",
+    age: 24,
+    ability: 78,  
+    country: "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-brazil_1f1e7-1f1f7.png",
+    img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/players/4/1652804978.jpeg",
+
+    fullName: "Arton Lucas Dantas de Medeiros",
+    leg: "Canhoto",
+    height: "1,80m",
+    city: "Carnaúba dos Dantas - RN",
+    birthDate: "19/06/1997",
+    formerTeams: [" Fluminense"," Spartak Moskow"],
+    arriveIn: "31/03/2022",
+    endOfContract: "31/12/2022",
+    fanBase: 3,
+    marketValueInEuros:4500000,
   },
   {
     name: "Paulo Sousa",
@@ -323,5 +667,16 @@ export const squad = [
     country:
       "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-portugal_1f1f5-1f1f9.png",
     img: "https://fla-bucket-s3-us.s3.amazonaws.com/public/images/elenco/1/1642443805.jpeg",
+    
+    fullName: "Paulo Manuel Carvalho Sousa",
+    leg: "Destro",
+    height: "1,77m",
+    city: "Viseu, Portugal",
+    birthDate: "30/08/1970",
+    formerTeams: [" aposentado"],
+    arriveIn: "2022",
+    endOfContract: "",
+    fanBase: 1,
+    marketValueInEuros:null,
   },
 ];
