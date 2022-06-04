@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  margin: 3px;
+  
   position: relative;
 }
 .container {
@@ -244,6 +244,11 @@ body {
   to {
     transform: rotate(1turn);
   }
+}
+.footer{
+  background-color: red;
+  text-align: center;
+  font-size: .9rem;
 }
 @media (max-width: 790px) {
   .sortContainer {
