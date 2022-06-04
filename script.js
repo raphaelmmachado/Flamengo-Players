@@ -7,10 +7,14 @@ let searchBar = document.querySelector("[data-search]");
 const loadingSpinner = document.querySelector("[data-loading-spinner]");
 
 const showSpinner = () => {
+  loadingSpinner.classList.remove("hidden")
   loadingSpinner.classList.add("show");
   setTimeout(() => loadingSpinner.classList.remove("show"), 2000);
 };
-const hideSpinner = () => loadingSpinner.classList.remove("show");
+const hideSpinner = () => {
+  loadingSpinner.classList.add("hidden")
+  loadingSpinner.classList.remove("show");
+}
 
 const flipCard = () => {
   const cardsElement = document.querySelectorAll(".card");
@@ -20,7 +24,7 @@ const flipCard = () => {
     });
   });
 };
-// function to hide element that show players by position
+// function to hide element that shows players by position
 const hideCardsRow = () => {
   const cardsRow = document.querySelector("[data-cards-row]");
   cardsRow.classList.add("hidden");

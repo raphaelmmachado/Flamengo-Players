@@ -199,6 +199,9 @@ body {
 }
 .position-h1{
   width: fit-content;
+  padding-left: 2px;
+  padding-right: 5px;
+  background-color: black;
   color: rgb(136, 2, 2);
 
 }
@@ -207,8 +210,10 @@ body {
 }
 .loading{
   display: flex;
+  text-align: center;
   justify-content: center;
-  visibility: hidden
+  visibility: hidden;
+  
 }
 .show{
   visibility: visible;
@@ -243,7 +248,7 @@ body {
   .sortClick {
     width: fit-content;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 397px) {
     .search {
       width: 50vw;
     }
@@ -251,7 +256,6 @@ body {
       margin: 0;
     }
     .sortContainer{
-      
       display: grid;
       grid-template-columns:  repeat(3, 1fr);
     }
