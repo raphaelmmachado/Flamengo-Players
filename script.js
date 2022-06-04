@@ -84,7 +84,7 @@ const htmlTemplate = (
 const showSpinner = () => {
   loadingSpinner.classList.remove("hidden");
   loadingSpinner.classList.add("show");
-  setTimeout(() => loadingSpinner.classList.remove("show"), 2000);
+  setTimeout(() => loadingSpinner.classList.remove("show"), 5000);
 };
 const hideSpinner = () => {
   loadingSpinner.classList.add("hidden");
