@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <header class="container">
     <div class="nameContainer">
       <label for="search"><img src="./images/lupa.png" class="searchImg"></label>
       <input type="search" name="search" class="search" placeholder="nome" data-search></input>
@@ -22,69 +22,72 @@
       <div id="sortBy">Ordenar por:</div>
       <div class="sortContainer">
         <div class="sortClick" data-sortByPosition><img src="./images/team_position.png">Posição</div>
-        <div class="sortClick" data-sortByAbility><img src="./images/003-soccer-player.png" alt="habilidade">Habilidade</div>
+        <div class="sortClick" data-sortByAbility><img src="./images/003-soccer-player.png" alt="habilidade">Habilidade
+        </div>
         <div class="sortClick" data-sortByMarketValue><img src="./images/value.png" alt="valor de mercado">Valor</div>
         <div class="sortClick" data-sortByNumber>
           <img src="./images/001-football-shirt.png" alt="camisa de football">Camisa
         </div>
         <div class="sortClick" data-sortByAge><img src="./images/001-age.png" alt="age">Idade</div>
-        
+
       </div>
     </div>
-  </div>
+  </header>
+  <div class="loading" data-loading-spinner></div>
+  <main class="wrapper" data-wrapper>
 
-  <div class="wrapper" data-wrapper>
     <template>
       <figure class="card">
         <div class="card-front">
-          <img class="photo" src=${player.img}
-          alt="football player">
+          <img class="photo" src=${player.img} alt="football player">
           <div class="profile1">
-          <div class="name">
+            <div class="name">
               <img src='./images/fla.png' class='logo'>
-             <div>${player.name === "Gustavo Henrique" ? "Gust. Henrique" : player.name}</div>
-             <img class='country' src='${player.country}'></div>
+              <div>${player.name === "Gustavo Henrique" ? "Gust. Henrique" : player.name}</div>
+              <img class='country' src='${player.country}'>
+            </div>
             <div class="profile2">
               <div class="profile3">
-              <div>Idade:</div>
-              <div>${player.age}</div>
+                <div>Idade:</div>
+                <div>${player.age}</div>
               </div>
               <div class="profile3">
-              <div>Camisa:</div>
-              <div>${player.number}</div>
+                <div>Camisa:</div>
+                <div>${player.number}</div>
               </div>
               <div class="profile3">
-              <div>Posição:</div>
-              <div>${player.position === "Lateral Esquerdo" ? "Lat. Esquerdo": player.position && player.position === "Lateral Direito" ? "Lat. Direito" : player.position}</div>
+                <div>Posição:</div>
+                <div>${player.position === "Lateral Esquerdo" ? "Lat. Esquerdo": player.position && player.position ===
+                  "Lateral Direito" ? "Lat. Direito" : player.position}</div>
               </div>
               <div class="profile3">
-              <div>Habilidade:</div>
-              <div>${player.ability}</div>
+                <div>Habilidade:</div>
+                <div>${player.ability}</div>
               </div>
             </div>
           </div>
-          </div>
-    
-    
-          <div class="card-back">
+        </div>
+
+
+        <div class="card-back">
           <div class="backside-info">
-          <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
-          <p><span class="black-text">Cidade:</span> ${player.city}</p>
-          <p><span class="black-text">Nascimento:</span> ${player.birthDate}</p>
-          <p><span class="black-text">Perna:</span> ${player.leg}</p>
-          <p><span class="black-text">Altura:</span> ${player.height}</p>
-          <p><span class="black-text">Chegou:</span> ${player.arriveIn}</p>
-          <p><span class="black-text">Contrato:</span> ${player.endOfContract}</p>
-          <p><span class="black-text">Ex-times:</span> ${player.formerTeams}</p>
-          <br>
-          <p><span class="black-text">Valor:</span>  €${player.marketValueInEuros}</p>
-          <p><span class="black-text">Popularidade:</span> ${player.fanBase}</p>
+            <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
+            <p><span class="black-text">Cidade:</span> ${player.city}</p>
+            <p><span class="black-text">Nascimento:</span> ${player.birthDate}</p>
+            <p><span class="black-text">Perna:</span> ${player.leg}</p>
+            <p><span class="black-text">Altura:</span> ${player.height}</p>
+            <p><span class="black-text">Chegou:</span> ${player.arriveIn}</p>
+            <p><span class="black-text">Contrato:</span> ${player.endOfContract}</p>
+            <p><span class="black-text">Ex-times:</span> ${player.formerTeams}</p>
+            <br>
+            <p><span class="black-text">Valor:</span> €${player.marketValueInEuros}</p>
+            <p><span class="black-text">Popularidade:</span> ${player.fanBase}</p>
           </div>
-          </div>
-    
-        </figure>
+        </div>
+
+      </figure>
     </template>
-  </div>
+  </main>
 
   <div class="hidden" data-cards-row>
     <h1 class="position-h1">TREINADOR</h1>

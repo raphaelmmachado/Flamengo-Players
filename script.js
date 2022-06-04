@@ -3,15 +3,42 @@ const sortByPositionButton = document.querySelector("[data-sortByPosition]");
 const sortByAgeButton = document.querySelector("[data-sortByAge]");
 const sortByAbilityButton = document.querySelector("[data-sortByAbility]");
 const sortByValueButton = document.querySelector("[data-sortByMarketValue]");
-
 let searchBar = document.querySelector("[data-search]");
+const loadingSpinner = document.querySelector("[data-loading-spinner]");
+
+const showSpinner = () => {
+  loadingSpinner.classList.add("show");
+  setTimeout(() => loadingSpinner.classList.remove("show"), 2000);
+};
+const hideSpinner = () => loadingSpinner.classList.remove("show");
+
+const flipCard = () => {
+  const cardsElement = document.querySelectorAll(".card");
+  cardsElement.forEach((card) => {
+    card.addEventListener("click", (e) => {
+      e.currentTarget.classList.toggle("flip");
+    });
+  });
+};
+// function to hide element that show players by position
+const hideCardsRow = () => {
+  const cardsRow = document.querySelector("[data-cards-row]");
+  cardsRow.classList.add("hidden");
+};
+
+const showCards = (cards) => {
+  const wrapper = document.querySelector("[data-wrapper]");
+  wrapper.classList.remove("hidden");
+  wrapper.innerHTML = cards;
+};
 
 // DEFAULT: BY ABILITY
 async function getAllPlayers() {
   const url = "https://flamengo-players-api.herokuapp.com";
+  showSpinner();
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
+  hideSpinner();
   const sortByAbility = data.sort((a, b) => b.ability - a.ability);
 
   const cards = sortByAbility.reduce((accumulator, player) => {
@@ -74,33 +101,22 @@ async function getAllPlayers() {
 
     </figure>
     `;
-
     return accumulator;
   }, "");
 
-  const cardsRow = document.querySelector("[data-cards-row]");
-  cardsRow.classList.add("hidden");
-
-  const wrapper = document.querySelector("[data-wrapper]");
-  wrapper.classList.remove("hidden");
-  wrapper.innerHTML = cards;
-
-  //event to flip the card
-  const cardsElement = document.querySelectorAll(".card");
-  cardsElement.forEach((card) => {
-    card.addEventListener("click", (e) => {
-      console.log(e.currentTarget.classList.toggle("flip"));
-    });
-  });
+  hideCardsRow();
+  showCards(cards);
+  flipCard();
 }
 document.addEventListener("DOMContentLoaded", getAllPlayers);
 
 // BY NAME
 async function getPlayerByName(input) {
   const url = "https://flamengo-players-api.herokuapp.com";
+  showSpinner();
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
+  hideSpinner();
   const sortedByAbility = data.sort((a, b) => b.ability - a.ability);
 
   const filteredByName = sortedByAbility.filter((player) => {
@@ -163,7 +179,6 @@ async function getPlayerByName(input) {
         </div>
         </div>
   
-  
         <div class="card-back">
         <div class="backside-info">
         <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
@@ -187,19 +202,9 @@ async function getPlayerByName(input) {
     })
     .join("");
 
-  const cardsRow = document.querySelector("[data-cards-row]");
-  cardsRow.classList.add("hidden");
-
-  const wrapper = document.querySelector("[data-wrapper]");
-  wrapper.classList.remove("hidden");
-  wrapper.innerHTML = cards;
-  //event to flip the card
-  const cardsElement = document.querySelectorAll(".card");
-  cardsElement.forEach((card) => {
-    card.addEventListener("click", (e) => {
-      console.log(e.currentTarget.classList.toggle("flip"));
-    });
-  });
+  hideCardsRow();
+  showCards(cards);
+  flipCard();
 }
 //DEBOUNCE
 const updateDebounceText = debounce((input) => {
@@ -225,9 +230,10 @@ function debounce(cb, delay = 750) {
 //BY NUMBER
 async function sortPlayersByNumber() {
   const url = "https://flamengo-players-api.herokuapp.com";
+  showSpinner();
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
+  hideSpinner();
   const sortByNumber = data.sort((a, b) => a.number - b.number);
 
   const cards = sortByNumber
@@ -295,27 +301,18 @@ async function sortPlayersByNumber() {
     })
     .join("");
 
-  const cardsRow = document.querySelector("[data-cards-row]");
-  cardsRow.classList.add("hidden");
-
-  const wrapper = document.querySelector("[data-wrapper]");
-  wrapper.classList.remove("hidden");
-  wrapper.innerHTML = cards;
-  //event to flip the card
-  const cardsElement = document.querySelectorAll(".card");
-  cardsElement.forEach((card) => {
-    card.addEventListener("click", (e) => {
-      console.log(e.currentTarget.classList.toggle("flip"));
-    });
-  });
+  hideCardsRow();
+  showCards(cards);
+  flipCard();
 }
 
 //BY AGE
 async function sortPlayersByAge() {
   const url = "https://flamengo-players-api.herokuapp.com";
+  showSpinner();
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
+  hideSpinner();
   const sortByAge = data.sort((a, b) => b.age - a.age);
 
   const cards = sortByAge
@@ -382,27 +379,18 @@ async function sortPlayersByAge() {
     })
     .join("");
 
-    const cardsRow = document.querySelector("[data-cards-row]")
-    cardsRow.classList.add("hidden")
-
-  const wrapper = document.querySelector("[data-wrapper]");
-  wrapper.classList.remove("hidden");
-  wrapper.innerHTML = cards;
-  //event to flip the card
-  const cardsElement = document.querySelectorAll(".card");
-  cardsElement.forEach((card) => {
-    card.addEventListener("click", (e) => {
-      console.log(e.currentTarget.classList.toggle("flip"));
-    });
-  });
+  hideCardsRow();
+  showCards(cards);
+  flipCard();
 }
 
 // BY VALUE
 async function sortPlayersByMarketValue() {
   const url = "https://flamengo-players-api.herokuapp.com";
+  showSpinner();
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
+  hideSpinner();
   const sortByMarketValue = data.sort(
     (a, b) => b.marketValueInEuros - a.marketValueInEuros
   );
@@ -471,24 +459,18 @@ async function sortPlayersByMarketValue() {
     })
     .join("");
 
-  const wrapper = document.querySelector("[data-wrapper]");
-  wrapper.classList.remove("hidden");
-  wrapper.innerHTML = cards;
-  //event to flip the card
-  const cardsElement = document.querySelectorAll(".card");
-  cardsElement.forEach((card) => {
-    card.addEventListener("click", (e) => {
-      console.log(e.currentTarget.classList.toggle("flip"));
-    });
-  });
+  hideCardsRow();
+  showCards(cards);
+  flipCard();
 }
 // BY POSITION
 async function sortPlayersByPosition() {
   const url = "https://flamengo-players-api.herokuapp.com";
+  showSpinner();
   const response = await fetch(`${url}/get`);
   const data = await response.json();
-
-  const manager = data.filter(player=> player.position === "Treinador")
+  hideSpinner();
+  const manager = data.filter((player) => player.position === "Treinador");
   const goalKeepers = data.filter((player) => player.position === "Goleiro");
   const defenders = data.filter((player) => player.position === "Zagueiro");
   const sideBacks = data.filter(
@@ -504,7 +486,7 @@ async function sortPlayersByPosition() {
   );
   const attackers = data.filter((player) => player.position === "Atacante");
 
-  const managerCard = manager.map(player => {
+  const managerCard = manager.map((player) => {
     return (player = `
     <figure class="card">
     <div class="card-front">
@@ -544,7 +526,6 @@ async function sortPlayersByPosition() {
       </div>
       </div>
 
-
       <div class="card-back">
       <div class="backside-info">
       <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
@@ -562,11 +543,10 @@ async function sortPlayersByPosition() {
       <p><span class="black-text">Popularidade:</span> ${player.fanBase}</p>
       </div>
       </div>
-
     </figure>
-    `)
-  })
-//-----------------------------------------------------------------------------
+    `);
+  });
+  //-----------------------------------------------------------------------------
 
   const goalKeepersCards = goalKeepers.map((player) => {
     return (player = `
@@ -607,7 +587,6 @@ async function sortPlayersByPosition() {
         </div>
       </div>
       </div>
-
 
       <div class="card-back">
       <div class="backside-info">
@@ -670,7 +649,6 @@ async function sortPlayersByPosition() {
         </div>
       </div>
       </div>
-
 
       <div class="card-back">
       <div class="backside-info">
@@ -800,7 +778,6 @@ async function sortPlayersByPosition() {
       </div>
       </div>
 
-
       <div class="card-back">
       <div class="backside-info">
       <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
@@ -864,7 +841,6 @@ async function sortPlayersByPosition() {
       </div>
       </div>
 
-
       <div class="card-back">
       <div class="backside-info">
       <p><span class="black-text">Nome Completo:</span> ${player.fullName}</p>
@@ -893,27 +869,21 @@ async function sortPlayersByPosition() {
   const cardsRow = document.querySelector("[data-cards-row]");
   cardsRow.classList.remove("hidden");
 
-  let managerCardContainer = document.querySelector("[data-manager]")
+  let managerCardContainer = document.querySelector("[data-manager]");
   let goalKeepersContainer = document.querySelector("[data-goalkeepers]");
   let defendersContainer = document.querySelector("[data-defenders]");
   let sideBacksContainer = document.querySelector("[data-side-backs]");
   let midfieldersContainer = document.querySelector("[data-midfielders]");
   let attackersContainer = document.querySelector("[data-atacantes]");
 
-  managerCardContainer.innerHTML = managerCard
+  managerCardContainer.innerHTML = managerCard;
   goalKeepersContainer.innerHTML = goalKeepersCards;
   defendersContainer.innerHTML = defendersCards;
   sideBacksContainer.innerHTML = sideBacksCards;
   midfieldersContainer.innerHTML = midfieldersCards;
   attackersContainer.innerHTML = attackersCards;
 
-  //event to flip the card
-  const cardsElement = document.querySelectorAll(".card");
-  cardsElement.forEach((card) => {
-    card.addEventListener("click", (e) => {
-      console.log(e.currentTarget.classList.toggle("flip"));
-    });
-  });
+  flipCard();
 }
 
 sortByValueButton.addEventListener("click", sortPlayersByMarketValue);
