@@ -84,7 +84,7 @@ const htmlTemplate = (
 const showSpinner = () => {
   loadingSpinner.classList.remove("hidden");
   loadingSpinner.classList.add("show");
-  setTimeout(() => loadingSpinner.classList.remove("show"), 2000);
+  setTimeout(() => loadingSpinner.classList.remove("show"), 5000);
 };
 const hideSpinner = () => {
   loadingSpinner.classList.add("hidden");
@@ -123,7 +123,7 @@ function getAllPlayers() {
   httpRequest().then((data) => {
     const sortByAbility = data.sort((a, b) => b.ability - a.ability);
     const cards = sortByAbility.reduce((accumulator, player) => {
-      const html = (accumulator += htmlTemplate(
+      const players = (accumulator += htmlTemplate(
         player.img,
         player.name,
         player.country,
@@ -142,7 +142,7 @@ function getAllPlayers() {
         player.marketValueInEuros,
         player.fanBase
       ));
-      return html;
+      return players;
     }, "");
 
     hideCardsRow();
