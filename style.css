@@ -213,7 +213,8 @@ body {
   padding-right: 5px;
   background-color: black;
   color: rgb(136, 2, 2);
-
+  border-radius: 4px;
+  margin: 2px;
 }
 .hidden{
   display: none;
