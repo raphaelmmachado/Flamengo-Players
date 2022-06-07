@@ -246,11 +246,6 @@ body {
     transform: rotate(1turn);
   }
 }
-.footer{
-  background-color: red;
-  text-align: center;
-  font-size: .9rem;
-}
 @media (max-width: 790px) {
   .sortContainer {
     text-align: center;
