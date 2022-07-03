@@ -7,9 +7,9 @@ Users can click a card to flip to see more information in the backside.
 
 ### Build with:
 - HTML
-- CSS
-- JAVASCRIPT
-- NODE ( EXPRESS )
+- CSS: Grid, Flex.
+- JAVASCRIPT: Array map, reduce, filter, sort. Async Functions
+- NODE: Express
 
 ### What I Learned:
 - Generate html element from json data.
@@ -30,9 +30,9 @@ Usuários podem procurar jogadores por nome ou apelido, ordenar por posição, i
 Usuários também podem clicar nas cartas, elas irão girar e mostrar mais informações na parte de trás.
 ### Feito com:
 - HTML
-- CSS
-- JAVASCRIPT
-- NODE (EXPRESS)
+- CSS: Grid, Flex.
+- JAVASCRIPT: Array map, reduce, filter, sort. Async Functions
+- NODE: Express
 
 ### O que eu aprendi:
 - Gerar elementos html de dados json
