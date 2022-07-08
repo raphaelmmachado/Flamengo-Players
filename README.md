@@ -24,10 +24,10 @@ https://rm0909.github.io/Flamengo-cards/
 ________________________________________________________________________________________________
 
 # Flamengo Cards
-Eu criei uma api que envia dados sobre os jogadores do Flamengo, meu time de coração. 
-Com isso eu criei cards que mostram esses dados dos jogadores.
-Usuários podem procurar jogadores por nome ou apelido, ordenar por posição, idade, número da camisa, valor de mercado e habilidade.
-Usuários também podem clicar nas cartas, elas irão girar e mostrar mais informações na parte de trás.
+
+ Criei uma api com Node Express que envia dados de jogadores do Flamengo, e então no Frontend eu peguei esse dados e exibi em cartas espalhadas usando Grid.  Criei botões com Javascript que usam métodos de Array como map, reduce, sort e filter para ordenar as cartas por habilidade, número da camisa, idade, valor de mercado. Criei uma barra de pesquisa para ordenar jogadores por nome ou apelido, ignorando acentos. Também usei uma manipulação no DOM para ordenar jogadores por posição, nisso eu usei Flex. 
+Minha maior dificuldade foi lidar com promises, eu não sabia que async functions sempre retornam promises e outra dificuldade foi tornar responsivo, pois o nome de alguns jogadores eram grande demais.
+
 ### Feito com:
 - HTML
 - CSS: Grid, Flex.
