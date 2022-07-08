@@ -1,6 +1,6 @@
 # Flamengo Cards
-I created an api that serves some data from Flamengo, my favourite football / soccer team.
-Then in the frontend i created cards that shows all the players informations.
+I created an api with Node Express that sends data from Flamengo (my favourite football team) players, and then in Frontend I took this data and displayed it on spreaded cards using Grid. I created buttons with Javascript that use Array methods like map, reduce, sort and filter to sort the cards by skill, shirt number, age, market value. I created a search bar to filter players by name or nickname, ignoring accents. I also used a manipulation in the DOM to sort players by position, in this I used Flex.
+My biggest difficulty was dealing with promises, I didn't know that async functions always return promises and another difficulty was making it responsive, as some players' names were too long.
 
 Users can search a player by name or nickname, sort players by position, age, shirt number, market value and ability.
 Users can click a card to flip to see more information in the backside.
