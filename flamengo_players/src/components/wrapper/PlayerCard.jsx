@@ -1,8 +1,8 @@
 import Card from "react-bootstrap/Card"
-function PlayerCard({ img,state,number,name,age }) {
+function PlayerCard({ img,state,number,name,age,pos }) {
   return (
     <>
-      <Card className="card-box">
+      <Card className="card-box " >
         <Card.Img src={img} />
         <div className="patch">
           <img src={state} />
@@ -10,10 +10,8 @@ function PlayerCard({ img,state,number,name,age }) {
         <Card.Body className="card-box-player-name">
           <div id="player-number">{number}</div>
           <Card.Title className="player-title">
-            <div>{name}</div>
-            <div>
-             teste
-            </div>
+            <h2 id="player-name">{name}</h2>
+            <h5>{pos}</h5>
           </Card.Title>
         </Card.Body>
       </Card>

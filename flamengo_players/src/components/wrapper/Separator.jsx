@@ -51,6 +51,7 @@ function Separator() {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                pos={player.pos}
               />
             </Col>
           );
@@ -74,6 +75,7 @@ function Separator() {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                pos={player.pos}
               />
             </Col>
           );

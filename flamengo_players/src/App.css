@@ -85,6 +85,9 @@ body {
   color: var(--red-primary);
   font-size: 4rem;
 }
+#player-name{
+  text-align: center;
+}
 .card-box-player-name {
   background-color: var(--red-primary);
   border-radius: 0 0 6px 6px;
@@ -154,6 +157,7 @@ body {
   }
   #header-text-2 h1 {
     font-size: 2.5rem;
+
   }
 }
 

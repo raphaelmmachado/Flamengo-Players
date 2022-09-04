@@ -51,6 +51,7 @@ function Wrapper({ playersByPosition, sortState }) {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                pos={player.pos}
               />
             </Col>
           ))}
