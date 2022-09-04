@@ -1,8 +1,6 @@
-import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { PlayerCard } from "./PlayerCard";
-import { useState } from "react";
 import { squad } from "../../data/players";
 
 function Separator() {
@@ -31,12 +29,6 @@ function Separator() {
   );
   const coachArray = squad.filter((player) => player.position === "Treinador");
 
-  // const [attackers, setAttackers] = useState(attackersArray);
-  // const [midFielders, setMidFielders] = useState(midFieldersArray);
-  // const [sideBacks, setSideBacks] = useState(sideBacksArray);
-  // const [defenders, setDefenders] = useState(defendersArray);
-  // const [goalKeepers, setGoalKeepers] = useState(goalKeepersArray);
-  // const [coach, setCoach] = useState(coachArray);
   return (
     <>
       <div className="separator d-flex justify-content-center align-center">

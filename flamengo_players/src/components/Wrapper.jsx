@@ -1,21 +1,42 @@
+import { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { squad } from "../data/players.ts";
 import { PlayerCard } from "./wrapper/PlayerCard";
-
 import { Separator } from "./wrapper/Separator";
-function Wrapper({ playersByPosition}) {
-  const sortedByAbility = squad.sort((a, b) => b.ability - a.ability);  
-  const data = sortedByAbility
 
-/*O PROBLEMA É QUE A ARRAY ESTÁ SENDO FILTRADA EM LOOP -- FIXED*/
+function Wrapper({ playersByPosition, sortState }) {
+  const [data, setData] = useState(squad);
+  useEffect(() => {
+    const toNumber = [...data].sort((a, b) => a.number - b.number);
+    const toHeight = [...data].sort((a, b) => b.height - a.height);
+    const toAge = [...data].sort((a, b) => b.age - a.age);
+    const toAbility = [...data].sort((a, b) => b.ability - a.ability);
 
+    switch (sortState) {
+      case "age":
+        setData(toAge);
+        break;
+      case "number":
+        setData(toNumber);
+        break;
+      case "height":
+        setData(toHeight);
+        break;
+      case "ability":
+        setData(toAbility);
+        break;
+      default:
+        break;
+    }
+  }, [sortState]);
+ 
   return (
     <Container fluid className="wrapper ">
       {playersByPosition ? (
         <Separator />
-      ) : ( 
+      ) : (
         <Row>
           {data.map((player) => (
             <Col
@@ -33,7 +54,7 @@ function Wrapper({ playersByPosition}) {
               />
             </Col>
           ))}
-        </Row> 
+        </Row>
       )}
     </Container>
   );

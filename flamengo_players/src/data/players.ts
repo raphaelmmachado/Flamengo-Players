@@ -85,7 +85,7 @@ interface Player {
     | "Ponta Esquerda"
     | "Ponta Direita";
   age: number;
-  ability: number | "T";
+  ability: number;
   state?: string;
   country: string;
   img: string;
@@ -774,7 +774,7 @@ export const squad: Array<Player> = [
     number: "T",
     position: "Treinador",
     age: 60,
-    ability: "T",
+    ability: 0,
     state: sp,
     country: brasil,
     img: dorival,

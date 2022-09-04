@@ -1,5 +1,3 @@
-// import { useContext } from "react";
-// import { Context } from "../../context/ContextProvider";
 import Dropdown from "react-bootstrap/Dropdown";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -7,19 +5,17 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import { MdPersonSearch } from "react-icons/md";
 
-function SubHeader({ setPlayersByPosition, setInputText, inputText }) {
-  // const { handleText } = useContext(Context);
+function SubHeader({ setSortState, setInputText, setPlayersByPosition }) {
   return (
     <Container fluid className="header-subheader">
       <Row className="sub-header-row">
         <Col lg={5} md={5} sm={5} className="d-flex align-items-center">
-         <MdPersonSearch
-                color="white"
-                size={"26px"}
-                style={{ marginRight: "3px" }}
-              />
+          <MdPersonSearch
+            color="white"
+            size={"26px"}
+            style={{ marginRight: "3px" }}
+          />
           <Form.Control
-            value={inputText}
             type="text"
             placeholder="NOME OU APELIDO DO JOGADOR"
             onChange={(e) => setInputText(e.target.value.toLowerCase())}
@@ -32,20 +28,37 @@ function SubHeader({ setPlayersByPosition, setInputText, inputText }) {
               <Dropdown.Item onClick={() => setPlayersByPosition(true)}>
                 Posição
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => console.log("clicado")}>
+              <Dropdown.Item
+                onClick={() => {
+                  setPlayersByPosition(false);
+                  setSortState("ability");
+                }}
+              >
                 Habilidade
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => console.log("clicado")}>
+              <Dropdown.Item
+                onClick={() => {
+                  setPlayersByPosition(false);
+                  setSortState("number");
+                }}
+              >
                 Número
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => console.log("clicado")}>
+              <Dropdown.Item
+                onClick={() => {
+                  setPlayersByPosition(false);
+                  setSortState("age");
+                }}
+              >
                 Idade
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => console.log("clicado")}>
+              <Dropdown.Item
+                onClick={() => {
+                  setPlayersByPosition(false);
+                  setSortState("height");
+                }}
+              >
                 Altura
-              </Dropdown.Item>
-              <Dropdown.Item onClick={() => console.log("clicado")}>
-                Popularidade
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

@@ -1,28 +1,24 @@
-import { ContextProvider } from "./context/ContextProvider";
 import { useState } from "react";
 import { Header } from "./components/Header";
 import { Wrapper } from "./components/Wrapper";
 import { FilteredPlayers } from "./components/FilteredPlayers";
 function App() {
+  const [sortState, setSortState] = useState("");
   const [playersByPosition, setPlayersByPosition] = useState(true);
   const [inputText, setInputText] = useState("");
-
   return (
     <>
-      <ContextProvider>
         <Header
-          setPlayersByPosition={setPlayersByPosition}
+          setSortState={setSortState}
           setInputText={setInputText}
-          inputText={inputText}
+          setPlayersByPosition={setPlayersByPosition}
         />
         {!inputText ? (
-          <Wrapper
-            playersByPosition={playersByPosition}           
-          />
+          <Wrapper playersByPosition={playersByPosition} sortState={sortState}/>
         ) : (
-          <FilteredPlayers inputText={inputText}/>
+          <FilteredPlayers inputText={inputText} />
         )}
-      </ContextProvider>
+    
     </>
   );
 }
