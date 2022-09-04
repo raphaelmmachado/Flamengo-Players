@@ -1,10 +1,10 @@
 import { Title } from "./header/Title";
 import { SubHeader } from "./header/SubHeader";
-function Header({setPlayersByPosition}) {
+function Header({setPlayersByPosition, setInputText}) {
   return (
     <header>
       <Title />
-      <SubHeader setPlayersByPosition={setPlayersByPosition}/>
+      <SubHeader setPlayersByPosition={setPlayersByPosition} setInputText={setInputText}/>
     </header>
   );
 }

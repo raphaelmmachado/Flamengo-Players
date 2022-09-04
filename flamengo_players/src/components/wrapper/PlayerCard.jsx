@@ -11,9 +11,8 @@ function PlayerCard({ img,state,number,name,age }) {
           <div id="player-number">{number}</div>
           <Card.Title className="player-title">
             <div>{name}</div>
-            <div className="overall">
-              <div id="ovr">{"Idade"}</div>
-              <div>{age}</div>
+            <div >
+             teste
             </div>
           </Card.Title>
         </Card.Body>
