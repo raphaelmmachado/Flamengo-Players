@@ -33,7 +33,7 @@ function Wrapper({ playersByPosition, sortState }) {
   }, [sortState]);
  
   return (
-    <Container fluid className="wrapper ">
+    <Container className="wrapper ">
       {playersByPosition ? (
         <Separator />
       ) : (
@@ -41,8 +41,9 @@ function Wrapper({ playersByPosition, sortState }) {
           {data.map((player) => (
             <Col
               lg={3}
-              md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              md={4}
+              sm={6}
+              className="mb-3 mt-3 d-flex justify-content-center align-center"
               key={player.name}
             >
               <PlayerCard

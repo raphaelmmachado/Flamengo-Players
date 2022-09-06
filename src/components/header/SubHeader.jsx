@@ -21,7 +21,7 @@ function SubHeader({ setSortState, setInputText, setPlayersByPosition }) {
             onChange={(e) => setInputText(e.target.value.toLowerCase())}
           />
         </Col>
-        <Col lg={1} md={2} sm={3}>
+        <Col lg={2} md={3} sm={4}>
           <Dropdown>
             <Dropdown.Toggle variant="dark">Ordenar por:</Dropdown.Toggle>
             <Dropdown.Menu variant="dark">

@@ -43,7 +43,7 @@ function Separator() {
               key={i}
               lg={true}
               md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              className="mb-4 mt-2 d-flex justify-content-center align-center"
             >
               <PlayerCard
                 img={player.img}
@@ -58,7 +58,7 @@ function Separator() {
         })}
       </Row>
       <div className="separator d-flex justify-content-center align-center">
-        <h3 style={{ textAlign: "center" }}>M E I O - C A M P O S</h3>
+        <h3 style={{ textAlign: "center" }}>M E I O S - C A M P O S</h3>
       </div>
       <Row>
         {midFieldersArray.map((player, i) => {
@@ -67,7 +67,7 @@ function Separator() {
               key={i}
               lg={true}
               md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              className="mb-4 mt-2 d-flex justify-content-center align-center"
             >
               <PlayerCard
                 img={player.img}
@@ -91,7 +91,7 @@ function Separator() {
               key={i}
               lg={true}
               md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              className="mb-3 mt-3 d-flex justify-content-center align-center"
             >
               <PlayerCard
                 img={player.img}
@@ -114,7 +114,7 @@ function Separator() {
               key={i}
               lg={true}
               md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              className="mb-3 mt-3 d-flex justify-content-center align-center"
             >
               <PlayerCard
                 img={player.img}
@@ -137,7 +137,7 @@ function Separator() {
               key={i}
               lg={true}
               md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              className="mb-3 mt-3 d-flex justify-content-center align-center"
             >
               <PlayerCard
                 img={player.img}
@@ -160,7 +160,7 @@ function Separator() {
               key={i}
               lg={true}
               md={6}
-              className="mb-2 mt-2 d-flex justify-content-center align-center"
+              className="mb-3 mt-3 d-flex justify-content-center align-center"
             >
               <PlayerCard
                 img={player.img}

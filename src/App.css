@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=M+PLUS+Code+Latin&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap");
-/* cards orignal size
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=M+PLUS+Code+Latin&family=Passion+One&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Suez+One&display=swap');/* cards orignal size
 width: 322px;
 height: 450px; */
 *:root {
   --red-primary: #e82727;
   --black: #0d0d0d;
   --glass: rgba(255, 255, 255, 0.527);
+  --black2: rgb(32, 31, 31);
 }
 *,
 *::after,
@@ -13,10 +13,10 @@ height: 450px; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Bebas Neue";
+  font-family: 'Roboto';
 }
 body {
-  background-image: url("./assets/field/field.jpg");
+  background-image: url("./assets/field/bg-rb-negro1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -59,21 +59,24 @@ body {
   width: 100%;
   padding: 1rem;
 }
-
+input {
+  font-family: "Bebas Neue";
+}
 .card-box {
   position: relative;
   background-color: var(--glass);
-  height: 400px;
+  height: 333px;
+  width: 230px;
   border: 2px solid var(--red-and-black-radial-gradient);
 }
 .card-box img {
-  width: 280px;
+  width: 100%;
   display: block;
 }
 .patch img {
   position: absolute;
   top: 0%;
-  width: 60px;
+  width: 40px;
   border-top-left-radius: 20px;
 }
 #player-number {
@@ -83,16 +86,26 @@ body {
   width: 75px;
   text-align: center;
   color: var(--red-primary);
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: "Passion One";
 }
 #player-name{
   text-align: center;
 }
+#position{
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: center;
+}
 .card-box-player-name {
   background-color: var(--red-primary);
   border-radius: 0 0 6px 6px;
-  padding-top: 0.6rem;
-  padding-bottom: 0px;
+  height: 63px;
+}
+.card-box-player-name h5{
+  font-size: 60%;
+  margin: 0;
+  padding: 0;
 }
 .player-title {
   display: flex;
@@ -106,12 +119,10 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-#ovr {
-  font-size: 0.6rem;
-}
+
 .separator {
   background-color: var(--glass);
-  color: var(--black);
+  color: var(--black2);
   /* width: 283px; */
   border-left: 5px solid var(--red-primary);
   border-right: 5px solid var(--red-primary);
@@ -131,18 +142,18 @@ body {
   color: rgb(218, 218, 218);
   padding-right: 5rem;
   font-size: 3vw;
-  letter-spacing: 1vw;
+ 
 }
 #header-text-2 {
   text-align: center;
-  letter-spacing: 1.6vw;
   color: rgb(218, 218, 218);
+  
 }
 #header-text-1 h1 {
-  font-size: 3rem;
+  font-size: 3rem;font-family: "Bebas Neue"
 }
 #header-text-2 h1 {
-  font-size: 3rem;
+  font-size: 3rem; font-family: "Bebas Neue";
 }
 @media (max-width: 1024px) {
   #header-text-1{
@@ -172,6 +183,7 @@ body {
   }
   #header-text-1 h1{
     font-size: 2rem;
+    padding-left: 5px;
   }
   #header-text-2 h1{
     letter-spacing: 0.2rem;
@@ -190,6 +202,7 @@ body {
   }
   #header-text-1 h1{
     font-size: 1.6rem;
+    padding-left: 5px;
   }
   #header-text-2 h1{
     letter-spacing: 0.2rem;
@@ -203,6 +216,7 @@ body {
  
   #header-text-1 h1{
     font-size: 1.3rem;
+    padding-left: 5px;
   }
   #header-text-2 h1{
     letter-spacing: 0.2rem;
@@ -220,4 +234,23 @@ body {
     letter-spacing: 0.2rem;
     font-size: 1rem;
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6b2727;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: #991212;
 }

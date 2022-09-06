@@ -9,7 +9,7 @@ function FilteredPlayers({ inputText }) {
   const [data, setData] = useState(squad);
   console.log(inputText);
   return (
-    <Container fluid className="wrapper ">
+    <Container className="wrapper ">
       <Row>
         {data
           .filter((player) => {
@@ -33,7 +33,7 @@ function FilteredPlayers({ inputText }) {
               <Col
                 lg={3}
                 md={6}
-                className="mb-2 mt-2 d-flex justify-content-center align-center"
+                className="mb-3 mt-3 d-flex justify-content-center align-center"
                 key={player.name}
               >
                 <PlayerCard

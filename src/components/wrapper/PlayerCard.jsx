@@ -8,11 +8,10 @@ function PlayerCard({ img,state,number,name,age,pos }) {
           <img src={state} />
         </div>
         <Card.Body className="card-box-player-name">
-          <div id="player-number">{number}</div>
-          <Card.Title className="player-title">
-            <h2 id="player-name">{name}</h2>
-            <h5>{pos}</h5>
-          </Card.Title>
+         <div id="player-number">{number}</div>
+          <Card.Title className="player-title d-flex justify-content between align-center">
+            <h4 id="player-name" className="text-center">{name}</h4>
+          </Card.Title> 
         </Card.Body>
       </Card>
     </>
