@@ -52,6 +52,7 @@ function Separator() {
                 name={player.name}
                 age={player.age}
                 pos={player.pos}
+                position={player.position}
               />
             </Col>
           );
@@ -76,6 +77,7 @@ function Separator() {
                 name={player.name}
                 age={player.age}
                 pos={player.pos}
+                position={player.position}
               />
             </Col>
           );
@@ -99,6 +101,7 @@ function Separator() {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                position={player.position}
               />
             </Col>
           );
@@ -122,6 +125,7 @@ function Separator() {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                position={player.position}
               />
             </Col>
           );
@@ -145,6 +149,7 @@ function Separator() {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                position={player.position}
               />
             </Col>
           );
@@ -168,6 +173,7 @@ function Separator() {
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                position={player.position}
               />
             </Col>
           );

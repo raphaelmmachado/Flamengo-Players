@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import { squad } from "../data/players.ts";
 import { PlayerCard } from "./wrapper/PlayerCard";
 import { Separator } from "./wrapper/Separator";
+import { BrowserRouter } from "react-router-dom";
 
 function Wrapper({ playersByPosition, sortState }) {
   const [data, setData] = useState(squad);
@@ -47,12 +48,15 @@ function Wrapper({ playersByPosition, sortState }) {
               key={player.name}
             >
               <PlayerCard
+                
                 img={player.img}
                 state={player.state}
                 number={player.number}
                 name={player.name}
                 age={player.age}
+                position={player.position}
                 pos={player.pos}
+                nick={player.alsoKnownAs}
               />
             </Col>
           ))}
