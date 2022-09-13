@@ -2,30 +2,44 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { PlayerCard } from "./PlayerCard";
 import { squad } from "../../data/players";
-
+import { useMemo } from "react";
 function Separator() {
-  const attackersArray = squad.filter(
-    (player) =>
-      player.position === "Atacante" ||
-      player.position === "Ponta Direita" ||
-      player.position === "Ponta Esquerda"
+  const attackersArray = useMemo(
+    () =>
+      squad.filter(
+        (player) =>
+          player.position === "Atacante" ||
+          player.position === "Ponta Direita" ||
+          player.position === "Ponta Esquerda"
+      ),
+    [squad]
   );
-  const midFieldersArray = squad.filter(
-    (player) =>
-      player.position === "Meio-Campo" ||
-      player.position === "Meio-Defensivo" ||
-      player.position === "Meio-Ofensivo"
+  const midFieldersArray = useMemo(
+    () =>
+      squad.filter(
+        (player) =>
+          player.position === "Meio-Campo" ||
+          player.position === "Meio-Defensivo" ||
+          player.position === "Meio-Ofensivo"
+      ),
+    [squad]
   );
-  const sideBacksArray = squad.filter(
-    (player) =>
-      player.position === "Lateral Direito" ||
-      player.position === "Lateral Esquerdo"
+  const sideBacksArray = useMemo(
+    () =>
+      squad.filter(
+        (player) =>
+          player.position === "Lateral Direito" ||
+          player.position === "Lateral Esquerdo"
+      ),
+    [squad]
   );
-  const defendersArray = squad.filter(
-    (player) => player.position === "Zagueiro"
+  const defendersArray = useMemo(
+    () => squad.filter((player) => player.position === "Zagueiro"),
+    [squad]
   );
-  const goalKeepersArray = squad.filter(
-    (player) => player.position === "Goleiro"
+  const goalKeepersArray = useMemo(
+    () => squad.filter((player) => player.position === "Goleiro"),
+    [squad]
   );
   const coachArray = squad.filter((player) => player.position === "Treinador");
 
@@ -168,12 +182,27 @@ function Separator() {
               className="mb-3 mt-3 d-flex justify-content-center align-center"
             >
               <PlayerCard
-                img={player.img}
-                state={player.state}
-                number={player.number}
                 name={player.name}
-                age={player.age}
+                nick={player.alsoKnownAs}
+                number={player.number}
+                img={player.img}
                 position={player.position}
+                state={player.state}
+                age={player.age}
+                pos={player.pos}
+                ability={player.ability}
+                country={player.country}
+                poster={player.poster}
+                fullName={player.fullName}
+                leg={player.leg}
+                height={player.height}
+                city={player.city}
+                birth={player.birth}
+                formerTeams={player.formerTeams}
+                arrival={player.arrival}
+                contract={player.contract}
+                fanBase={player.fanBase}
+                valueEuros={player.valueEuros}
               />
             </Col>
           );

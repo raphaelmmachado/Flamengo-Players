@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=M+PLUS+Code+Latin&family=Passion+One&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Suez+One&display=swap');/* cards orignal size
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=M+PLUS+Code+Latin&family=Passion+One&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Suez+One&display=swap"); /* cards orignal size
 width: 322px;
 height: 450px; */
 *:root {
@@ -6,7 +6,7 @@ height: 450px; */
   --black: #0d0d0d;
   --glass: rgba(255, 255, 255, 0.527);
   --black2: rgb(32, 31, 31);
-  --white:rgb(218, 218, 218);
+  --white: rgb(218, 218, 218);
 }
 *,
 *::after,
@@ -14,7 +14,7 @@ height: 450px; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 body {
   background-image: url("./assets/field/bg-rb-negro1.jpg");
@@ -22,6 +22,11 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   max-width: 100vw;
+}
+a,
+:active,
+:hover {
+  text-decoration: none;
 }
 .header-title {
   text-align: center;
@@ -91,7 +96,7 @@ input {
   font-family: "Passion One";
 }
 
-#position{
+#position {
   font-size: 1rem;
   text-align: center;
   vertical-align: center;
@@ -103,11 +108,13 @@ input {
 }
 
 .player-title {
- color: var(--white);
+  color: var(--white);
 }
-.player-subtitle{
-font-size: 0.86rem;
+.player-subtitle {
+  font-size: 0.86rem;
+  color: var(--black);
 }
+
 .overall {
   display: flex;
   flex-direction: column;
@@ -130,6 +137,7 @@ font-size: 0.86rem;
 .separator h3 {
   text-align: center;
   text-justify: auto;
+  text-decoration: none;
 }
 
 #header-text-1 {
@@ -137,24 +145,24 @@ font-size: 0.86rem;
   color: var(--white);
   padding-right: 5rem;
   font-size: 3vw;
- 
 }
 #header-text-2 {
   text-align: center;
-  color: var(--white)
-  
+  color: var(--white);
 }
 #header-text-1 h1 {
-  font-size: 3rem;font-family: "Bebas Neue"
+  font-size: 3rem;
+  font-family: "Bebas Neue";
 }
 #header-text-2 h1 {
-  font-size: 3rem; font-family: "Bebas Neue";
+  font-size: 3rem;
+  font-family: "Bebas Neue";
 }
 @media (max-width: 1024px) {
-  #header-text-1{
+  #header-text-1 {
     letter-spacing: 0.2vw;
   }
-  #header-text-2{
+  #header-text-2 {
     letter-spacing: 0.7vw;
   }
   #header-text-1 h1 {
@@ -163,10 +171,43 @@ font-size: 0.86rem;
   }
   #header-text-2 h1 {
     font-size: 2.5rem;
-
   }
 }
 
+.player-page-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 768px;
+  background-color: rgb(39, 37, 37);
+}
+.player-page-container-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.player-page-container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.poster{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+.player-page-container h1{
+  color: var(--white);
+}
+.player-page-container h2{
+  color: var(--white);
+}
+.player-page-container-col h5{
+  color: var(--white);
+}
 @media (max-width: 563px) {
   .header-title {
     display: flex;
@@ -176,11 +217,11 @@ font-size: 0.86rem;
   .header-title img {
     left: 85%;
   }
-  #header-text-1 h1{
+  #header-text-1 h1 {
     font-size: 2rem;
     padding-left: 5px;
   }
-  #header-text-2 h1{
+  #header-text-2 h1 {
     letter-spacing: 0.2rem;
     font-size: 2rem;
   }
@@ -195,11 +236,11 @@ font-size: 0.86rem;
   .sub-header-row {
     flex-direction: column-reverse;
   }
-  #header-text-1 h1{
+  #header-text-1 h1 {
     font-size: 1.6rem;
     padding-left: 5px;
   }
-  #header-text-2 h1{
+  #header-text-2 h1 {
     letter-spacing: 0.2rem;
     font-size: 1.6rem;
   }
@@ -208,12 +249,12 @@ font-size: 0.86rem;
   .title h1 {
     font-size: 7vw;
   }
- 
-  #header-text-1 h1{
+
+  #header-text-1 h1 {
     font-size: 1.3rem;
     padding-left: 5px;
   }
-  #header-text-2 h1{
+  #header-text-2 h1 {
     letter-spacing: 0.2rem;
     font-size: 1.3rem;
   }
@@ -222,10 +263,10 @@ font-size: 0.86rem;
   .header-title img {
     left: 83%;
   }
-  #header-text-1 h1{
+  #header-text-1 h1 {
     font-size: 1rem;
   }
-  #header-text-2 h1{
+  #header-text-2 h1 {
     letter-spacing: 0.2rem;
     font-size: 1rem;
   }
@@ -233,7 +274,6 @@ font-size: 0.86rem;
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
- 
 }
 
 /* Track */
@@ -244,7 +284,7 @@ font-size: 0.86rem;
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #6b2727;
-   border-radius: 6px;
+  border-radius: 6px;
 }
 
 /* Handle on hover */

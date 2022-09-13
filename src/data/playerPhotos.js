@@ -58,7 +58,9 @@ import df from "../assets/states/df.png";
 import go from "../assets/states/go.png";
 import urug from "../assets/states/uruguai.png"
 import chi from "../assets/states/chile.png"
+import gabigolposter from '../assets/posters/gabigolposter.png'
 export {
+  gabigolposter,
   vitinho,
   vidal,
   varela,

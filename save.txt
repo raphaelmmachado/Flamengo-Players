@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-//
-import { Context } from "../../context/ContextProvider";
 import Card from "react-bootstrap/Card";
 function PlayerCard({
   name,
@@ -25,10 +22,8 @@ function PlayerCard({
   fanBase,
   valueEuros,
 }) {
-  const { setShowSubHeader } = useContext(Context);
   return (
     <Link
-      onClick={() => setShowSubHeader(false)}
       to={`player/${number}`}
       state={{
         name: name,
@@ -53,7 +48,7 @@ function PlayerCard({
         valueEuros: valueEuros,
       }}
     >
-      <Card className="card-box">
+      <Card className="card-box ">
         <Card.Img src={img} />
         <div className="patch">
           <img src={state} />
@@ -72,3 +67,10 @@ function PlayerCard({
   );
 }
 export { PlayerCard };
+_____________________________
+WRAPPER
+
+// const toNumber = [...data].sort((a, b) => a.number - b.number);
+    // const toHeight = [...data].sort((a, b) => b.height - a.height);
+    // const toAge = [...data].sort((a, b) => b.age - a.age);
+    // const toAbility = [...data].sort((a, b) => b.ability - a.ability);

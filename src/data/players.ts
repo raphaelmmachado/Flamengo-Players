@@ -59,6 +59,7 @@ import {
   //rs,
   sc,
   //to,
+  gabigolposter
 } from "./playerPhotos";
 
 const brasil =
@@ -68,6 +69,7 @@ const uruguai =
 const chile =
   "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojidex/112/flag-for-chile_1f1e8-1f1f1.png";
 /*SE DER MERDA, DESFAÇA O TYPESCRIPT*/
+
 interface Player {
   name: string;
   alsoKnownAs?: string;
@@ -87,13 +89,14 @@ interface Player {
   pos: "T" | "GOL" | "DEF" | "LAT" | "MCD" | "MC" | "MCO" | "AT" | "PON";
   age: number;
   ability: number;
+  city: string;
   state?: string;
   country: string;
   img: string;
+  poster?:string;
   fullName: string;
   leg: "Destro" | "Canhoto" | "AmbiDestro";
   height: number | null;
-  city: string;
   birth: string;
   formerTeams: string[] | "base";
   arrival: string;
@@ -119,6 +122,7 @@ export const squad: Array<Player> = [
     state: sp,
     country: brasil,
     img: gabigol,
+    poster: gabigolposter,
     fullName: "Gabriel Barbosa Almeida",
     leg: "Canhoto",
     height: 1.78,

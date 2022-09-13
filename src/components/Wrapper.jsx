@@ -1,19 +1,33 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useContext} from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+
+import { Context } from "../context/ContextProvider";
 import { squad } from "../data/players.ts";
 import { PlayerCard } from "./wrapper/PlayerCard";
 import { Separator } from "./wrapper/Separator";
-import { BrowserRouter } from "react-router-dom";
 
 function Wrapper({ playersByPosition, sortState }) {
+  const { setShowSubHeader } = useContext(Context);
+
   const [data, setData] = useState(squad);
+  const toNumber = useMemo(
+    () => [...data].sort((a, b) => a.number - b.number),
+    [data]
+  );
+  const toHeight = useMemo(
+    () => [...data].sort((a, b) => b.height - a.height),
+    [data]
+  );
+  const toAge = useMemo(() => [...data].sort((a, b) => b.age - a.age), [squad]);
+  const toAbility = useMemo(
+    () => [...data].sort((a, b) => b.ability - a.ability),
+    [squad]
+  );
+
   useEffect(() => {
-    const toNumber = [...data].sort((a, b) => a.number - b.number);
-    const toHeight = [...data].sort((a, b) => b.height - a.height);
-    const toAge = [...data].sort((a, b) => b.age - a.age);
-    const toAbility = [...data].sort((a, b) => b.ability - a.ability);
+    setShowSubHeader(true)
 
     switch (sortState) {
       case "age":
@@ -32,7 +46,7 @@ function Wrapper({ playersByPosition, sortState }) {
         break;
     }
   }, [sortState]);
- 
+
   return (
     <Container className="wrapper ">
       {playersByPosition ? (
@@ -48,15 +62,27 @@ function Wrapper({ playersByPosition, sortState }) {
               key={player.name}
             >
               <PlayerCard
-                
+                fullName={player.fullName}
+                name={player.name}
+                number={player.number}
+                position={player.position}
                 img={player.img}
                 state={player.state}
-                number={player.number}
-                name={player.name}
                 age={player.age}
-                position={player.position}
                 pos={player.pos}
                 nick={player.alsoKnownAs}
+                ability={player.ability}
+                country={player.country}
+                poster={player.poster}
+                leg={player.leg}
+                height={player.height}
+                city={player.city}
+                birth={player.birth}
+                formerTeams={player.formerTeams}
+                arrival={player.arrival}
+                contract={player.contract}
+                fanBase={player.fanBase}
+                valueEuros={player.valueEuros}
               />
             </Col>
           ))}

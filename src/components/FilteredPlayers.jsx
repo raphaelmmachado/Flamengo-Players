@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useState,useEffect,useContext } from "react";
+import { Context } from "../context/ContextProvider";
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -6,7 +8,11 @@ import { PlayerCard } from "./wrapper/PlayerCard";
 import { squad } from "../data/players";
 
 function FilteredPlayers({ inputText }) {
+  const {setShowSubHeader} = useContext(Context)
   const [data, setData] = useState(squad);
+  useEffect(()=>{
+    setShowSubHeader(true)
+  },[])
   console.log(inputText);
   return (
     <Container className="wrapper ">
@@ -37,11 +43,27 @@ function FilteredPlayers({ inputText }) {
                 key={player.name}
               >
                 <PlayerCard
-                  img={player.img}
-                  state={player.state}
-                  number={player.number}
-                  name={player.name}
-                  age={player.age}
+                 fullName={player.fullName}
+                 name={player.name}
+                 number={player.number}
+                 position={player.position}
+                 img={player.img}
+                 state={player.state}
+                 age={player.age}
+                 pos={player.pos}
+                 nick={player.alsoKnownAs}
+                 ability={player.ability}
+                 country={player.country}
+                 poster={player.poster}
+                 leg={player.leg}
+                 height={player.height}
+                 city={player.city}
+                 birth={player.birth}
+                 formerTeams={player.formerTeams}
+                 arrival={player.arrival}
+                 contract={player.contract}
+                 fanBase={player.fanBase}
+                 valueEuros={player.valueEuros}
                 />
               </Col>
             );
