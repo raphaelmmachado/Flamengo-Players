@@ -4,7 +4,7 @@ import flamengoBadge from "../../assets/escudos/flamedium.png";
 function Title() {
   return (
     <div className="header-title">
-      <Link to="/" children={<img src={flamengoBadge} />} />
+      <Link to="/" children={<img id="badge" src={flamengoBadge} />} />
       <div className="title-text">
         <div id="header-text-1" className="title">
           <h1>CLUBE DE REGATAS</h1>

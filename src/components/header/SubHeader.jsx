@@ -38,6 +38,14 @@ function SubHeader({ setSortState, setInputText, setPlayersByPosition }) {
                 <Dropdown.Item
                   onClick={() => {
                     setPlayersByPosition(false);
+                    setSortState("value");
+                  }}
+                >
+                  Valor de Mercado
+                </Dropdown.Item>
+                <Dropdown.Item
+                  onClick={() => {
+                    setPlayersByPosition(false);
                     setSortState("ability");
                   }}
                 >

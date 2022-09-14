@@ -25,6 +25,10 @@ function Wrapper({ playersByPosition, sortState }) {
     () => [...data].sort((a, b) => b.ability - a.ability),
     [squad]
   );
+  const toValue = useMemo(
+    () => [...data].sort((a, b) => b.valueEuros - a.valueEuros),
+    [squad]
+  );
 
   useEffect(() => {
     setShowSubHeader(true)
@@ -38,6 +42,9 @@ function Wrapper({ playersByPosition, sortState }) {
         break;
       case "height":
         setData(toHeight);
+        break;
+        case "value":
+        setData(toValue);
         break;
       case "ability":
         setData(toAbility);
