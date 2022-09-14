@@ -182,7 +182,7 @@ input {
   min-height: 768px;
   background-color:#360a0ab6;
   padding: 1rem 1.5rem 0 1.5rem;
-  width: 100%;
+  max-width: 1440px;
 }
 .player-page-container-row{
   display: flex;
@@ -190,9 +190,9 @@ input {
   align-items: center;
   justify-content: space-around;
   height: 67vh;
-  width: 650px;
+ 
 }
-.player-page-container-col {
+.player-page-container-col{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -203,6 +203,7 @@ input {
 #player-value {
   font-weight: lighter;
 }
+
 .poster{
   display: flex;
   align-items: center;
@@ -212,7 +213,6 @@ input {
   border-radius: 6px;
 }
 .poster img{
-  
   width: 100%;
   display: block;
 }
@@ -264,6 +264,15 @@ input {
 @media (max-width: 486px) {
   .sub-header-row {
     flex-direction: column-reverse;
+  }
+  input{
+    margin-top: 0.6rem;
+  }
+  .separator{
+    margin-top: 0.4rem;
+  }
+  .separator h3{
+    font-size: 0.8rem;
   }
   #header-text-1 h1 {
     font-size: 1.6rem;

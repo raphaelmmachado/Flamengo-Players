@@ -7,51 +7,14 @@ function PlayerCard({
   name,
   number,
   position,
-  pos,
-  age,
-  ability,
-  city,
   state,
-  country,
   img,
-  poster,
-  fullName,
-  leg,
-  height,
-  birth,
-  formerTeams,
-  arrival,
-  contract,
-  fanBase,
-  valueEuros,
 }) {
   const { setShowSubHeader } = useContext(Context);
   return (
     <Link
       onClick={() => setShowSubHeader(false)}
       to={`player/${number}`}
-      state={{
-        name: name,
-        number: number,
-        position: position,
-        pos: pos,
-        age: age,
-        ability: ability,
-        city: city,
-        state: state,
-        country: country,
-        img: img,
-        poster: poster,
-        fullName: fullName,
-        leg: leg,
-        height: height,
-        birth: birth,
-        formerTeams: formerTeams,
-        arrival: arrival,
-        contract: contract,
-        fanBase: fanBase,
-        valueEuros: valueEuros,
-      }}
     >
       <Card className="card-box">
         <Card.Img src={img} />

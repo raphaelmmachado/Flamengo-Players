@@ -13,7 +13,6 @@ function App() {
   const [playersByPosition, setPlayersByPosition] = useState(true);
   const [inputText, setInputText] = useState("");
 
-  
   return (
     <>
       <ContextProvider>
@@ -37,6 +36,10 @@ function App() {
             }
           />
           <Route path="/player/:number" element={<PlayerPage />} />
+          <Route
+            path="*"
+            element={<h1>Jogador com esse número não encontrado!</h1>}
+          />
         </Routes>
       </ContextProvider>
     </>
