@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import { squad } from "../../data/players";
 
 function PlayerPage() {
+  
   let { number } = useParams();
   const memo = useMemo(
     () => squad.filter((player) => player.number == number),
@@ -23,9 +24,9 @@ function PlayerPage() {
       <>
         {data.map((player) => {
           return (
-            <div className="player-page-container" key={player.number}>
+            <div className="player-page-container" key={player.number} >
               <div>
-                <h1>{player.fullName}</h1>
+                <h1 >{player.fullName}</h1>
               </div>
               <div className="player-page-container-row ">
                 <div className="player-page-container-col">
@@ -36,9 +37,6 @@ function PlayerPage() {
                       anos)
                     </h5>
                   </div>
-                  {/* <div className="d-flex align-middle mb-2">
-                    <ChildFriendlyIcon htmlColor="white"/><h5> </h5>
-                  </div> */}
                   <div className="d-flex align-middle mb-2">
                     <LocationCityIcon htmlColor="white" />
                     <h5>

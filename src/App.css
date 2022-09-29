@@ -19,6 +19,7 @@ height: 450px; */
 }
 body {
   background-image: url("./assets/field/bg-rb-negro1.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -179,10 +180,10 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 768px;
   background-color:#360a0ab6;
-  padding: 1rem 1.5rem 0 1.5rem;
+  padding: 1rem 1.5rem 0.6rem 1.5rem;
   max-width: 1440px;
+  
 }
 .player-page-container-row{
   display: flex;
@@ -335,7 +336,7 @@ input {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #360a0ab6;
+  background: #000000ec;
 }
 
 /* Handle */
@@ -343,7 +344,9 @@ input {
   background: #6b2727;
   border-radius: 6px;
 }
-
+::-webkit-scrollbar-thumb:hover {
+  background: #811010;
+}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:active {
   background: #991212;

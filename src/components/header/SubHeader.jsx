@@ -21,7 +21,7 @@ function SubHeader({ setSortState, setInputText, setPlayersByPosition }) {
               style={{ marginRight: "3px" }}
             />
             <Form.Control
-              type="text"
+              type="text" 
               placeholder="NOME OU APELIDO DO JOGADOR"
               onChange={(e) => setInputText(e.target.value.toLowerCase())}
             />
